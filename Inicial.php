@@ -4,7 +4,6 @@
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
     $Rastro->Adicionar("Inicial", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
-	/*Teste de commit.*/
 ?>
 <html>
     <head>
