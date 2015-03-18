@@ -1,0 +1,342 @@
+/*Clearfix usado para adicionar um espaço vazio antes e depois dos elementos evitando que os floats se aglomerem.*/
+.clearfix:before, .clearfix:after   { content: " "; display: table; }
+.clearfix:after                     { clear: both; }
+.clearfix                           { *zoom: 1; }
+
+/*Efeitos Globais*/
+@keyframes marquee  {0% { top: 300px } 100% { top: -450px }}
+.marquee            {position: relative; animation: marquee 25s linear infinite; }
+.marquee:hover      {animation-play-state: paused; }
+@-webkit-keyframes  blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
+@-moz-keyframes     blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
+@keyframes          blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
+.blink { text-decoration: blink; animation: blinker 0.5s ease-in-out 0s infinite alternate; -moz-animation: blinker 0.5s ease-in-out 0s infinite alternate; -webkit-animation: blinker 0.5s ease-in-out 0s infinite alternate; }
+@-webkit-keyframes  pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@-moz-keyframes     pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@-o-keyframes       pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@-ms-keyframes      pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@keyframes          pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+
+/*Formatação Padrão da página*/
+html, body { min-height: 100%; }
+
+img, picture, video, embed
+{
+    max-width: 100%; /*Define a largura máxima em até 100%*/
+}
+
+a, a:link, a:visited
+{
+    
+}
+
+a:hover
+{
+    
+}
+
+body
+{
+    background-repeat:          repeat;
+    background-position:        center;
+    background-size:            cover;
+    -webkit-background-size:    cover;
+    -moz-background-size:       cover;
+    -o-background-size:         cover;
+    background-size:            cover;
+    background-image:           url('../imagens/fundos/fundo_padrao.jpg');
+    color:                      #7FFF00;                                                /*Cor padrão para todas as fontes*/
+    font-family:                /*"Old Standard TT", */Helvetica, sans-serif, arial;    /*definição da fonte geral incorporada do Google Fonts*/
+    font-size:                  1.125em;                                                /*18px ÷ 16px = 1.125em */
+    font-weight:                300;                                     
+    line-height:                1.2222222222em;                                         /*22px altura da linha*/
+    text-align:                 left;
+    //text-shadow:                0.8px 0.5px 0.2px #000;
+	text-shadow:				0px 0px 1px #708090;
+}
+
+.Centro     { margin: 0 auto; max-width: 1200px; width: 90%; }
+
+#ContainerColunas
+{
+    float:              left;
+    position:           relative;
+	padding:            0;
+    margin:             0 auto;
+    width:              100%;
+	min-width:			fit-content;
+    height:             fit-content;    
+    
+    /*border:                 1px solid;
+    -webkit-border-radius:  10px;
+    -moz-border-radius:     10px;
+    border-radius:          10px;*/
+    
+    //background-color:       #F00;
+}
+
+//.ContainerColunas .desktop figure, .container .tablet figure, .container .mobile figure
+//{
+//    width:              69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
+//}
+
+/*Colunas Padrão*/
+.ColunasP3_1, .ColunasP3_2, .ColunasP3_3
+{
+    float:              left;
+    position:           relative;
+    text-align:         center;
+    width:              31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
+    height:             310px;
+    overflow:           hidden;
+}
+
+.ColunasP3_1, .ColunasP3_2
+{
+    margin-right:       30px;
+    margin-right:       2.631578947368421%; /* 30px ÷ 1140px =  0.02631578947368421 x 100 = 2.631578947368421%*/
+}
+
+.ColunasP2_1, .ColunasP2_2
+{
+    float:              left;
+    position:           relative;
+    width:              31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
+}
+
+.ColunasP1_1
+{
+    float:              left;
+    position:           relative;
+    width:              31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
+}
+
+/*Coluna da Esquerda Maior*/
+.ColunasE2_1
+{
+    
+}
+
+.ColunasE2_2
+{
+    
+}
+
+/*Colunas da Direita Maiores*/
+.ColunasD2_1
+{
+    
+}
+
+.ColunasD2_2
+{
+    
+}
+
+.ColunasP3_1 { background-color: #AAA; margin-left : 0; }
+.ColunasP3_2 { background-color: #BBB; }
+.ColunasP3_3 { background-color: #CCC; margin-right: 0; }
+
+/*Imagens*/
+#ColunasP3_1 img, #ColunasP3_2 img, #ColunasP3_3 img
+{
+    margin:        10px auto -15px auto;
+    text-align:    center;
+}
+
+/*Formatação do Texto*/
+.ColunasP3_1, .ColunasP3_2, .ColunasP3_3,
+.ColunasP3_1, .ColunasP3_2,
+.ColunasP1_1
+{
+    //color:          #FFF;
+    font-size:      32px;
+    font-weight:    300;
+    margin-bottom:  30px;
+    text-shadow:    none;
+}
+
+/*Mensagens de Erro*/
+.Erro
+{
+    color:              #F00;
+    font-size:          12px;
+    letter-spacing:     0px;
+    text-shadow:        1px 1px 1px #8B1A1A;
+    font-weight:        bold;
+    min-width:          fit-content;
+    //background-color:   #00F;
+}
+
+/*Botões Padrão*/
+.Botao
+{
+    //float:          right;
+    padding-right:  2px;
+    //margin:         0 auto;
+    text-align:     center;
+}
+
+input
+{
+    color:                  #000;
+	font-family:            Arial,Helvetica,sans-serif;
+	text-shadow:            0px 0px 1px #777;
+	outline:                none;
+}
+
+input[type=text],
+input[type=password],
+input[type=textarea]
+{
+    float:                  left;
+    position:               relative;
+    height:                 23px;
+    width:                  calc(100% - 30px);
+	padding-left:           30px;
+	border:                 1px solid whitesmoke;
+    border-radius:          4px;
+    -moz-border-radius:     4px;
+    -webkit-border-radius:  4px;
+    box-shadow:             1px 1px 2px #FFF68F;    
+    -moz-box-shadow:        1px 1px 2px #FFF68F;
+    -webkit-box-shadow:     1px 1px 2px #FFF68F;
+}
+
+input[type=button]
+{
+    color:                      #1C1C1C;
+    min-height:					30px;
+    margin-top:                 5px;
+    padding:                    5px 10px 5px 10px;
+    
+    text-decoration:            none;
+    cursor:						pointer;
+    border:						1px solid #CDC673;
+    -webkit-border-radius:      5;
+    -moz-border-radius:         5;
+    border-radius:              5px;
+    background-color:           #FFF68F;
+    background-image:           -webkit-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           -moz-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           -ms-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           -o-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           linear-gradient(to bottom, #FFF68F, #CDC673);
+    background-attachment:      scroll;
+}
+
+input[type=button].ComImagem 
+{
+    padding:                    5px 10px 5px 25px;
+}
+
+input[type=button]:hover
+{
+    border:             1px solid #CDC673;
+    background-color:   #a6a6a6;
+    background:         #EEE685;
+    background-image:   -webkit-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   -moz-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   -ms-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   -o-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   linear-gradient(to bottom, #EEE685, #8B864E);
+}
+
+input[type=button]:active
+{
+    color:                  transparent;
+    background:             #EEE685;
+    background-image:       url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #EEE685, #8B864E);
+    background-repeat:      no-repeat, repeat;
+    background-size:        16px 16px, cover;
+    background-position:    center, top left; 
+}
+
+
+/*Código responsivo*/
+@media only screen /*Smartfones*/
+and (max-device-width: 320px)
+and (min-device-height: 480px)
+{
+	body		{ text-shadow: none }
+	.Centro     { margin: 0 auto; width: 90%; }
+}
+
+@media only screen /*Smartfones retrato*/
+and (max-device-width: 320px)
+and (min-device-height: 480px)
+and (orientation: portrait)
+{
+	
+}
+
+@media only screen /*Smartfones paisagem*/
+and (max-device-width: 480px)
+and (min-device-height: 320px)
+and (orientation: landscape)
+{
+	.Centro				{ margin: 0 auto; width: 90%; text-shadow: none; } 
+	#ContainerColunas	{ width: 100%; max-width: 100%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*iPads (portrait e landscape)*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+{
+
+}
+ 
+/*iPads (landscape)*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+{
+
+}
+ 
+/*iPads (portrait)*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+{
+
+}
+ 
+/*Desktops e laptops*/
+@media only screen
+and (min-width: 1224px)
+{
+
+}
+
+/*Telas grandes*/
+@media only screen
+and (min-width: 1824px)
+{
+
+}
+ 
+/*iPhone 4*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5)
+{
+
+}

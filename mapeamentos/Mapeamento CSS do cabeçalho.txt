@@ -1,0 +1,21 @@
+Estrutura CSS do cabeçalho:
+
+div id Cabecalho
+	div id Logo
+	div id NomeDoSistema
+	div id ContainerDadosDoUsuario
+		label class NomeUsuario
+		label class Sair
+	div id ContainerMenuSuperior
+		nav
+			ul class MenuSuperior
+				li id Teste
+				li id Teste
+				li id Teste
+				li id Teste
+	div id ContainerNavegacao
+	div id ContainerBusca	
+		form
+			input class Procura
+			button class Procurar
+		

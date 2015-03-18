@@ -1,0 +1,28 @@
+html{background-image:           url('../imagens/fundos/fundo_padrao.jpg');}
+
+
+div#login {
+	
+	margin-left: 40%;
+    margin-right: 40%;
+   	margin-top: 8%;
+	max-width: 25%;
+    min-width: 300px;
+    
+    
+}
+
+div#senha {
+	
+	margin-left: 40%;
+    margin-right: 40%;
+   	margin-top: 5px;
+	max-width: 25%;
+    min-width: 300px;
+   
+}
+	 
+ div#NovoUsuario {
+    margin-left: 42%;
+    margin-top: 14%;
+ }
