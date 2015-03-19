@@ -29,35 +29,36 @@
 <html lang="pt-br"> 
     <head>
         <?php require("includes/SecaoHead.php"); ?>
-        <link rel="stylesheet" href="css/login.css" type="text/css">   
+        <link rel="stylesheet" href="css/login.css" type="text/css" rel="stylesheet">  
+		<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
     <body class="Centro clearfix">
         <?php $ExibirMenus = false; $ExibirNomeSistema = false; require("Cabecalho.php"); ?>   
         <section id="ContainerColunas">
             <div id="ContainerFormularioLogin">
                 <h1>Login</h1>
-                <p class="Estado">Você <?php echo $Logado ?> logado no momento.</p><br/>
+                <p class="Estado" >Você <?php echo $Logado ?> logado no momento.</p><br/>
                 <form action="includes/ProcessarLogin.php" method="post" name="FormularioLogin" id="FormularioLogin">
                     <div class="ContainerDeCampos">
                         <div class="LinhaFormulario">
                             <div class="Campo">
-                                <input type="text" name="Login" id="Login" autocomplete="off" maxlength="60" placeholder="Seu login" required autofocus/>
+                                <input type="text" name="Login" id="Login" autocomplete="off" maxlength="60" placeholder="      Seu login" required autofocus/>
                             </div>
                         </div>
                         <div class="LinhaFormulario">
                             <div class="Campo">
-                                <input type="password" name="Senha" id="Senha" maxlength="20" placeholder="Sua senha" required/>
+                                <input type="password" name="Senha" id="Senha" maxlength="20" placeholder="      Sua senha" required/>
                             </div>
                         </div>
                     </div> <!-- ContainerDeCampos -->
-                    <div ID="Status"> 
+                    <div ID="Status" class="Status"> 
                         <?php
                         if (isset($_GET['Erro']))
                         {
                             switch ($_GET['Erro'])
                             {
                                 case 1:
-                                    echo '<p class="Erro">Erro ao fazer login.</p>';
+                                    echo '<p class="Erro">   Erro ao fazer login.</p>';
                                     break;
                                 case 2:
                                     echo '<p class="Erro">Sem permissão. Faça Login.</p>';
@@ -80,12 +81,14 @@
             <!--<div class="Botao">
                 <input type="button" id="Cadastro" class="ComImagem" value="É novo por aqui? Cadastre-se!" title="Cadastrar-se no Sistema" onclick="document.location.href='./Cadastro.php'"/>
             </div>-->
-            <div class="Botao">
+            <div class="Botao" style="margin-top:5%;">
                 <input type="button" id="Ajuda" class="ComImagem" value="Precisa de ajuda?" title="Ajuda sobre o sistema" onclick="document.location.href='./'"/>
             </div>
             <div class="Botao">
                 <input type="button" id="Sobre" class="ComImagem" value="Quer saber mais sobre nós?" title="Sobre o grupo Sim + Saúde" onclick="document.location.href='./'"/>
             </div>
+			
+					
         </section>
         <?php require("Rodape.php")?>
     </body>

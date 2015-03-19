@@ -37,10 +37,10 @@ a:hover
 
 body
 {
-    background-repeat:          repeat;
-    background-position:        center;
-    background-size:            cover;
-    -webkit-background-size:    cover;
+    //background-repeat:          no-repeat;
+    //background-position:        center;
+    //background-size:           contain;
+	-webkit-background-size:    cover;
     -moz-background-size:       cover;
     -o-background-size:         cover;
     background-size:            cover;

@@ -6,7 +6,7 @@
     $Rastro->Adicionar("Inicial", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
 ?>
 <html>
-    <head>
+    <head><link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=divice-width, initial-scale=1.0">
         <link type="image/x-icon" rel="icon" href="favicon.ico"/>
@@ -14,6 +14,7 @@
         <link type="text/css" rel="stylesheet" href="css/paginas.css"/>
         <link type="text/css" rel="stylesheet" href="css/cabecalho.css"/>
         <link type="text/css" rel="stylesheet" href="css/rodape.css"/>
+		<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
         <title>Singev</title>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/funcoes.js"></script>

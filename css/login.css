@@ -4,6 +4,7 @@
     /*Container Principal*/
     position:	relative;
     margin:		0 auto;
+	margin-top: 5%;
     padding:	5px 5px 50px 0px;
     width:		calc(100% - 12px);
 	max-width:	500px;
@@ -13,9 +14,9 @@
     //border:		1px solid #FFFFE0;
     //background-color:	#1C1C1C;    
     
-    -moz-box-shadow:	0 0 900px #FFFFE0 inset;
-    -webkit-box-shadow:	0 0 900px #FFFFE0 inset;
-    box-shadow:         0 0 900px #FFFFE0 inset;
+   // -moz-box-shadow:	0 0 900px #FFFFE0 inset;
+   // -webkit-box-shadow:	0 0 900px #FFFFE0 inset;
+   // box-shadow:         0 0 900px #FFFFE0 inset;
     
     //background-color:   #000000;
 }
@@ -32,7 +33,7 @@
 
 .Estado
 {
-    color:              #F90;
+   color:              #F90;
     font-size:          12px;
     height:             18px;
     letter-spacing:     0px;
@@ -46,14 +47,14 @@
 
 .ContainerDeCampos
 {
-    height:             90px;
+   height:             90px;
     width:              calc(100%);
     min-width:          250px;
-	margin-left:		2px;
-    border:				1px solid #E9967A;
-    -moz-box-shadow:	0 0 90px #FA8072 inset;
-    -webkit-box-shadow:	0 0 90px #FA8072 inset;
-    box-shadow:         0 0 90px #FA8072 inset;
+	margin-left:		10px;
+   // border:				1px solid #E9967A;
+    //-moz-box-shadow:	0 0 90px #FA8072 inset;
+    //-webkit-box-shadow:	0 0 90px #FA8072 inset;
+   // box-shadow:         0 0 90px #FA8072 inset;
     
     //background-color:   #00FF88;
 }
@@ -82,6 +83,7 @@
     margin-right:       0%;
     padding:            0;
     height:             40px;
+	
     
     //background-color:   #004400;
 }
@@ -143,9 +145,9 @@
 /*Definições específica dos campos e botões de login*/
 #Login
 {
-    background-color:      #FFFFFF; 
+    background-color:     #FFFFFF; 
     background-attachment: scroll;
-    background-image:      url("../imagens/icones/icone_usuario.png"), url("../imagens/fundo_textbox.png");
+    background-image:      url("../imagens/icones/icone_usuario.png");//, url("../imagens/fundo_textbox.png");
     background-repeat:     no-repeat, repeat-x;
     background-position:   7px 5px, right top;
 }
@@ -154,7 +156,8 @@
 {    
     background-color:      #FFFFFF; 
     background-attachment: scroll;
-    background-image:      url("../imagens/icones/icone_senha.png"), url("../imagens/fundo_textbox.png");
+    background-image:      url("../imagens/icones/icone_senha.png");//, url("../imagens/fundo_textbox.png");
+	margin-top:			-10px;
     background-repeat:     no-repeat, repeat-x;
     background-position:   7px 5px, right top;
 }
@@ -173,6 +176,8 @@
     background-repeat:     no-repeat;
     background-position:   7px 6px, top left;
     background-size:       16px 16px, cover;
+	margin-left:		   -140px;
+	margin-top:			   15px;
 }
 
 #Entrar:hover
@@ -250,7 +255,7 @@
 
 #Sobre:Active
 {
-    background-image:	url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
+  background-image:	url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
     background-image:	url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #EEE685, #8B864E);
     background-image:	url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #EEE685, #8B864E);
     background-image:	url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #EEE685, #8B864E);
@@ -293,7 +298,7 @@ and (orientation: landscape)
 {
 	#ContainerFormularioLogin		{ }
     #ContainerFormularioLogin h1	{ font-size: 1.1em; }
-    .Estado							{ width: 100%; margin: 0 auto; }
+    .Estado							{ width: 100%; margin: 0 auto;  }
     .ContainerDeCampos				{ height: 80px; }
     .LinhaFormulario				{ margin: 8px 0 0 0; width: 100%; }
 	.Campo							{ float: left; width: calc(100% - 20px); margin-left: 10px; }
