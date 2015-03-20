@@ -4,7 +4,7 @@
     /*Container Principal*/
     position:	relative;
     margin:		0 auto;
-	margin-top: 5%;
+	margin-top: 2%;
     padding:	5px 5px 50px 0px;
     width:		calc(100% - 12px);
 	max-width:	500px;
@@ -63,7 +63,11 @@
 {
     float:              left;
     position:           relative;
-    margin-left:        2px;
+    margin-left:        80px;
+	margin-top:			-5px;
+	
+	
+	
     //background-color:   #0000CC;
 }
 
@@ -109,8 +113,8 @@
 .Campo
 {
     float:          left;
-    width:          calc(100% - 20px);
-    margin-left:    10px;
+    width:          calc(100% - 100px);
+    margin-left:    calc(50% - 200px);
     
     //background-color:   #00CC00;
 }
@@ -176,8 +180,8 @@
     background-repeat:     no-repeat;
     background-position:   7px 6px, top left;
     background-size:       16px 16px, cover;
-	margin-left:		   -140px;
-	margin-top:			   15px;
+	margin-left:		   -200px;
+	margin-top:			   5px;
 }
 
 #Entrar:hover
@@ -351,11 +355,9 @@ and (orientation: landscape)
 
 
 
-
-
-
-
-
+#Botao{
+	margin-top: 12%;
+}
 
 
  

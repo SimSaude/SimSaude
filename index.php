@@ -42,7 +42,7 @@
                     <div class="ContainerDeCampos">
                         <div class="LinhaFormulario">
                             <div class="Campo">
-                                <input type="text" name="Login" id="Login" autocomplete="off" maxlength="60" placeholder="      Seu login" required autofocus/>
+                                <input type="text" name="Login" id="Login" autocomplete="on" maxlength="60" placeholder="      Seu login" required autofocus/>
                             </div>
                         </div>
                         <div class="LinhaFormulario">
@@ -81,13 +81,30 @@
             <!--<div class="Botao">
                 <input type="button" id="Cadastro" class="ComImagem" value="É novo por aqui? Cadastre-se!" title="Cadastrar-se no Sistema" onclick="document.location.href='./Cadastro.php'"/>
             </div>-->
+			<!--
             <div class="Botao" style="margin-top:5%;">
                 <input type="button" id="Ajuda" class="ComImagem" value="Precisa de ajuda?" title="Ajuda sobre o sistema" onclick="document.location.href='./'"/>
             </div>
             <div class="Botao">
                 <input type="button" id="Sobre" class="ComImagem" value="Quer saber mais sobre nós?" title="Sobre o grupo Sim + Saúde" onclick="document.location.href='./'"/>
             </div>
+			-->
 			
+			<div id="Botao" class="Botao">
+ 
+            <div class="btn-group" >
+                <button class="btn btn-warning" title="Cadastre-se, é rapidinho!" onclick="document.location.href='./Cadastro.php'"> <span class="glyphicon glyphicon-ok-sign"  ></span> &nbsp &nbsp  É novo por aqui? Cadastre-se.</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-success" title="Ajuda sobre o sistema" onclick="location.href='Ajuda.html'"> <span class="glyphicon glyphicon-question-sign"  ></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-danger" title="Sobre o grupo Sim + Saúde" onclick="location.href='SaibaMaisSobreNos.html'"> <span class="glyphicon glyphicon-info-sign"  ></span> &nbsp &nbsp Quer saber mais sobre nós?</button>
+            </div>
+        
+</div>  
 					
         </section>
         <?php require("Rodape.php")?>
