@@ -92,9 +92,9 @@
 			
 			<div id="Botao" class="Botao">
  
-            <div class="btn-group" >
+          <!--  <div class="btn-group" >
                 <button class="btn btn-warning" title="Cadastre-se, é rapidinho!" onclick="document.location.href='./Cadastro.php'"> <span class="glyphicon glyphicon-ok-sign"  ></span> &nbsp &nbsp  É novo por aqui? Cadastre-se.</button>
-            </div>
+            </div>-->
 
             <div class="btn-group">
                 <button class="btn btn-success" title="Ajuda sobre o sistema" onclick="location.href='Ajuda.html'"> <span class="glyphicon glyphicon-question-sign"  ></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>

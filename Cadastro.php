@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <title>Registro</title>
         <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+		<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster"/>
