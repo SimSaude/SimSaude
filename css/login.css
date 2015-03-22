@@ -154,6 +154,7 @@
     background-image:      url("../imagens/icones/icone_usuario.png");//, url("../imagens/fundo_textbox.png");
     background-repeat:     no-repeat, repeat-x;
     background-position:   7px 5px, right top;
+	text-indent:  23px;
 }
 
 #Senha
@@ -164,6 +165,7 @@
 	margin-top:			-10px;
     background-repeat:     no-repeat, repeat-x;
     background-position:   7px 5px, right top;
+	text-indent:  23px;
 }
 
 #Entrar
@@ -204,7 +206,7 @@
     background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #006900, #003600);
 }
 
-#Ajuda
+#BtAjudaSistema2
 {
 	width:					calc(100% / 4 - 8px);
     background-image:		url("../imagens/icones/icone_questao.png"), -webkit-linear-gradient(top, #FFF68F, #CDC673);
@@ -217,7 +219,7 @@
     background-size:		16px 16px, cover;
 }
 
-#Ajuda:Hover
+#BtAjudaSistema2:Hover
 {
     background-image:	url("../imagens/icones/icone_questao.png"), -webkit-linear-gradient(top, #EEE685, #8B864E);
     background-image:	url("../imagens/icones/icone_questao.png"), -moz-linear-gradient(top, #EEE685, #8B864E);
@@ -226,16 +228,23 @@
     background-image:	url("../imagens/icones/icone_questao.png"), linear-gradient(to bottom, #EEE685, #8B864E);
 }
 
-#Ajuda:Active
+#BtAjudaSistema:Active
 {
-    background-image:	url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #EEE685, #8B864E);
+     color:                  transparent;
+    background-image:       url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #006900, #003600);
+    background-image:       url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #006900, #003600);
+    background-image:       url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #006900, #003600);
+    background-image:       url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #006900, #003600);
+    background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #006900, #003600);
+	 background-repeat:     no-repeat;
+    background-position:   7px 6px, top left;
+    background-size:       16px 16px, cover;
+	//margin-left:		   -200px;
+	//margin-top:			   5px;
+
 }
 
-#Sobre
+#BtSobreGrupo2
 {
 	width:					calc(100% / 4 - 8px);
     background-image:		url("../imagens/icones/icone_informacao.png"), -webkit-linear-gradient(top, #FFF68F, #CDC673);
@@ -248,7 +257,7 @@
     background-size:		16px 16px, cover;
 }
 
-#Sobre:Hover
+#BtSobreGrupo2:Hover
 {
     background-image:   url("../imagens/icones/icone_informacao.png"), -webkit-linear-gradient(top, #EEE685, #8B864E);
     background-image:   url("../imagens/icones/icone_informacao.png"), -moz-linear-gradient(top, #EEE685, #8B864E);
@@ -257,13 +266,18 @@
     background-image:   url("../imagens/icones/icone_informacao.png"), linear-gradient(to bottom, #EEE685, #8B864E);
 }
 
-#Sobre:Active
+#BtSobreGrupo:Active
 {
-  background-image:	url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #EEE685, #8B864E);
+     color:                 transparent;
+    background-image:       url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #c12e2a, #c12e2a);
+    background-image:       url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #c12e2a, #c12e2a);
+    background-image:       url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #c12e2a, #c12e2a);
+    background-image:       url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #c12e2a, #c12e2a);
+    background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #c12e2a, #c12e2a);
+	 background-repeat:     no-repeat;
+    background-position:   7px 6px, top left;
+    background-size:       16px 16px, cover;
+	color: #c12e2a;
 }
 
 

@@ -159,12 +159,12 @@ body
 /*Mensagens de Erro*/
 .Erro
 {
-    color:              #F00;
-    font-size:          12px;
+    color:           #a9302a;
+    font-size:          14px;
     letter-spacing:     0px;
-    text-shadow:        1px 1px 1px #8B1A1A;
-    font-weight:        bold;
     min-width:          fit-content;
+	font-style:  oblique;
+	font-weight: bold;
     //background-color:   #00F;
 }
 
