@@ -173,7 +173,7 @@ body
 {
     //float:          right;
     padding-right:  2px;
-    //margin:         0 auto;
+    margin:         0 auto;
     text-align:     center;
 }
 
@@ -194,6 +194,7 @@ input[type=textarea]
     height:                 23px;
     width:                  calc(100% - 30px);
 	padding-left:           30px;
+    margin-bottom:          0px;
 	border:                 1px solid whitesmoke;
     border-radius:          4px;
     -moz-border-radius:     4px;

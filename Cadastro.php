@@ -205,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div ID="Status">
+                    <div ID="StatusInferior">
                         <p>Retornar à <a href="./">página de login</a>.</p>
                     </div>
                     <div class="ContainerDeBotoes">

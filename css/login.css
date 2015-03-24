@@ -4,21 +4,12 @@
     /*Container Principal*/
     position:	relative;
     margin:		0 auto;
-	margin-top: 2%;
     padding:	5px 5px 50px 0px;
-    width:		calc(100% - 12px);
-	max-width:	500px;
-	//margin-left: calc(100% / 2 - 250px); //Posicionar corretamente de acordo com as bordas.
-    //min-width:	250px;
+    width:		calc(100% / 2 - 100px);
+    min-width:  250px;
+	max-width:	500px;  
     
-    //border:		1px solid #FFFFE0;
-    //background-color:	#1C1C1C;    
-    
-   // -moz-box-shadow:	0 0 900px #FFFFE0 inset;
-   // -webkit-box-shadow:	0 0 900px #FFFFE0 inset;
-   // box-shadow:         0 0 900px #FFFFE0 inset;
-    
-    //background-color:   #000000;
+    background-color:   #000000;
 }
 
 #ContainerFormularioLogin h1
@@ -28,86 +19,73 @@
     font-weight:        normal;
     text-align:         center;
     
-    //background-color:   #0000FF;
+    background-color:   #0000FF;
 }
 
-.Estado
+.StatusSuperior
 {
-   color:              #F90;
+    color:              #F90;
     font-size:          12px;
     height:             18px;
     letter-spacing:     0px;
-    width:              81.5%;
+    width:              calc(100%);
     float:              right;
-    margin:             0 8.5% 0 0;
+    margin:             0 auto;
     text-align:         right;
     
-    //background-color:   #000044;
+    background-color:   #000044;
 }
 
 .ContainerDeCampos
 {
-   height:             90px;
-    width:              calc(100%);
-    min-width:          250px;
-	margin-left:		10px;
-   // border:				1px solid #E9967A;
-    //-moz-box-shadow:	0 0 90px #FA8072 inset;
-    //-webkit-box-shadow:	0 0 90px #FA8072 inset;
-   // box-shadow:         0 0 90px #FA8072 inset;
+    height:             90px;
+    //width:              100%;
+    //min-width:          250px;
+	//  margin-left:		10px;
     
-    //background-color:   #00FF88;
+    background-color:   #00FF88;
 }
 
-#Status
+#StatusInferior
 {
     float:              left;
     position:           relative;
-    margin-left:        80px;
-	margin-top:			-5px;
+    margin-left:        calc(50% - 200px);
 	
-	
-	
-    //background-color:   #0000CC;
+    background-color:   #0000CC;
 }
 
-#Status p
+#StatusInferior p
 {
     float:              left;
     position:           relative;
     margin:             0 auto;
    
-    //background-color:   #0000FF;
+    background-color:   #0000FF;
 }
 
 .ContainerDeBotoes
 {
     float:              right;
+    min-width:          fit-content;
     position:           relative;
     margin-right:       0%;
     padding:            0;
     height:             40px;
-	
     
     //background-color:   #004400;
-}
-
-#ContainerFormularioLogin, .ContainerDeCampos
-{
-    -moz-border-radius:		12px;
-    -webkit-border-radius:	12px;
-    border-radius:			12px;
 }
 
 .LinhaFormulario
 {
     float:              left;
     margin:             12px 0 0 0;
+    
     width:              100%;
     min-width:          fit-content;
     min-height:         fit-content;
     
-    //background-color:   #008800;
+    background-color:   #008800;
 }
 
 .Campo
@@ -116,7 +94,7 @@
     width:          calc(100% - 100px);
     margin-left:    calc(50% - 200px);
     
-    //background-color:   #00CC00;
+    background-color:   #00CC00;
 }
 
 .Campo input:hover
@@ -135,37 +113,26 @@
     -webkit-box-shadow:     0px 0px 2px #FF6347;
 }
 
-/*#ContainerColunas
-{
-    background-color:       transparent;
-    border:                 0;
-    -webkit-border-radius:  0;
-    -moz-border-radius:     0;
-    border-radius:          0;
-    
-    background-color:   #00FF00;
-}*/
-
 /*Definições específica dos campos e botões de login*/
 #Login
 {
-    background-color:     #FFFFFF; 
-    background-attachment: scroll;
-    background-image:      url("../imagens/icones/icone_usuario.png");//, url("../imagens/fundo_textbox.png");
-    background-repeat:     no-repeat, repeat-x;
-    background-position:   7px 5px, right top;
-	text-indent:  23px;
+    background-color:       #FFFFFF; 
+    background-attachment:  scroll;
+    background-image:       url("../imagens/icones/icone_usuario.png");//, url("../imagens/fundo_textbox.png");
+    background-repeat:      no-repeat, repeat-x;
+    background-position:    7px 5px, right top;
+	text-indent:            23px;
 }
 
 #Senha
 {    
-    background-color:      #FFFFFF; 
-    background-attachment: scroll;
-    background-image:      url("../imagens/icones/icone_senha.png");//, url("../imagens/fundo_textbox.png");
-	margin-top:			-10px;
-    background-repeat:     no-repeat, repeat-x;
-    background-position:   7px 5px, right top;
-	text-indent:  23px;
+    background-color:       #FFFFFF; 
+    background-attachment:  scroll;
+    background-image:       url("../imagens/icones/icone_senha.png");//, url("../imagens/fundo_textbox.png");
+	margin-top:             -10px;
+    background-repeat:      no-repeat, repeat-x;
+    background-position:    7px 5px, right top;
+	text-indent:            23px;
 }
 
 #Entrar
@@ -288,7 +255,7 @@ and (min-device-height: 480px)
 {
     #ContainerFormularioLogin		{ }
     #ContainerFormularioLogin h1	{ font-family: Century Gothic, Old Standard TT, Myriad Pro, Arial, Helvetica, Sans-Serif; font-size: 1.3em; }
-    .Estado							{ width: 100%; margin: 0 auto; }
+    .StatusSuperior					{ width: 100%; margin: 0 auto; }
     .ContainerDeCampos				{ height: 80px; }
     .LinhaFormulario				{ margin: 8px 0 0 0; width: 100%; }
 	.Campo							{ float: left; width: calc(100% - 20px); margin-left: 10px; }
@@ -302,7 +269,7 @@ and (orientation: portrait)
 {
     #ContainerFormularioLogin		{ margin-left: 3px; }
     #ContainerFormularioLogin h1	{ font-size: 1.3em; }
-    .Estado							{ width: 100%; margin: 0 auto; }
+    .StatusSuperior							{ width: 100%; margin: 0 auto; }
     .ContainerDeCampos				{ height: 80px; }
     .LinhaFormulario				{ margin: 8px 0 0 0; width: 100%; }
 	.Campo							{ float: left; width: calc(100% - 20px); margin-left: 10px; }
@@ -316,7 +283,7 @@ and (orientation: landscape)
 {
 	#ContainerFormularioLogin		{ }
     #ContainerFormularioLogin h1	{ font-size: 1.1em; }
-    .Estado							{ width: 100%; margin: 0 auto;  }
+    .StatusSuperior							{ width: 100%; margin: 0 auto;  }
     .ContainerDeCampos				{ height: 80px; }
     .LinhaFormulario				{ margin: 8px 0 0 0; width: 100%; }
 	.Campo							{ float: left; width: calc(100% - 20px); margin-left: 10px; }
@@ -329,7 +296,7 @@ and (min-device-height: 640px)
 {
 	#ContainerFormularioLogin		{ }
     #ContainerFormularioLogin h1	{ }
-    .Estado							{ width: 100%; margin: 0 auto; }
+    .StatusSuperior							{ width: 100%; margin: 0 auto; }
     .ContainerDeCampos				{ height: 80px; }
     .LinhaFormulario				{ margin: 8px 0 0 0; width: 100%; }
 	.Campo							{ float: left; width: calc(100% - 20px); margin-left: 10px; }
@@ -343,7 +310,7 @@ and (orientation: portrait)
 {
 	#ContainerFormularioLogin		{ }
     #ContainerFormularioLogin h1	{ }
-    .Estado							{ width: 100%; margin: 0 auto; }
+    .StatusSuperior							{ width: 100%; margin: 0 auto; }
     .ContainerDeCampos				{ height: 80px; }
     .LinhaFormulario				{ margin: 8px 0 0 0; width: 100%; }
 	.Campo							{ float: left; width: calc(100% - 20px); margin-left: 10px; }
@@ -357,7 +324,7 @@ and (orientation: landscape)
 {
 	#ContainerFormularioLogin		{ }
     #ContainerFormularioLogin h1	{ }
-    .Estado							{ width: 100%; margin: 0 auto; }
+    .StatusSuperior							{ width: 100%; margin: 0 auto; }
     .ContainerDeCampos				{ height: 80px; }
     .LinhaFormulario				{ margin: 8px 0 0 0; width: 100%; }
 	.Campo							{ float: left; width: calc(100% - 20px); margin-left: 10px; }

@@ -31,15 +31,13 @@
         <?php require("includes/SecaoHead.php"); ?>
         <link rel="stylesheet" href="css/login.css" type="text/css" rel="stylesheet">  
 		<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
-	
-		
     </head>
     <body class="Centro clearfix">
         <?php $ExibirMenus = false; $ExibirNomeSistema = false; require("Cabecalho.php"); ?>   
         <section id="ContainerColunas">
             <div id="ContainerFormularioLogin">
                 <h1>Login</h1>
-                <p class="Estado" >Você <?php echo $Logado ?> logado no momento.</p><br/>
+                <p class="StatusSuperior" >Você <?php echo $Logado ?> logado no momento.</p><br/>
                 <form action="includes/ProcessarLogin.php" method="post" name="FormularioLogin" id="FormularioLogin">
                     <div class="ContainerDeCampos">
                         <div class="LinhaFormulario">
@@ -53,14 +51,14 @@
                             </div>
                         </div>
                     </div> <!-- ContainerDeCampos -->
-                    <div ID="Status" class="Status"> 
+                    <div ID="StatusInferior" class="Status"> 
                         <?php
                         if (isset($_GET['Erro']))
                         {
                             switch ($_GET['Erro'])
                             {
                                 case 1:
-                                    echo '<p class="Erro">   Erro ao fazer login.</p>';
+                                    echo '<p class="Erro">Erro ao fazer login.</p>';
                                     break;
                                 case 2:
                                     echo '<p class="Erro">Sem permissão. Faça Login.</p>';
@@ -93,20 +91,17 @@
 			-->
 			
 			<div id="Botao" class="Botao">
- 
-          <!--  <div class="btn-group" >
-                <button class="btn btn-warning" title="Cadastre-se, é rapidinho!" onclick="document.location.href='./Cadastro.php'"> <span class="glyphicon glyphicon-ok-sign"  ></span> &nbsp &nbsp  É novo por aqui? Cadastre-se.</button>
-            </div>-->
+                <!--  <div class="btn-group" >
+                    <button class="btn btn-warning" title="Cadastre-se, é rapidinho!" onclick="document.location.href='./Cadastro.php'"> <span class="glyphicon glyphicon-ok-sign"  ></span> &nbsp &nbsp  É novo por aqui? Cadastre-se.</button>
+                </div>-->
+                <div class="btn-group">
+                    <button id="BtAjudaSistema" class="btn btn-success" title="Ajuda sobre o sistema" onclick="location.href='Ajuda.html'"> <span class="glyphicon glyphicon-question-sign"  ></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>
+                </div>
 
-            <div class="btn-group">
-                <button id="BtAjudaSistema" class="btn btn-success" title="Ajuda sobre o sistema" onclick="location.href='Ajuda.html'"> <span class="glyphicon glyphicon-question-sign"  ></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>
+                <div class="btn-group">
+                    <button id="BtSobreGrupo" class="btn btn-danger" title="Sobre o grupo Sim + Saúde" onclick="location.href='SaibaMaisSobreNos.html'"> <span class="glyphicon glyphicon-info-sign"  ></span> &nbsp &nbsp Quer saber mais sobre nós?</button>
+                </div>
             </div>
-
-            <div class="btn-group">
-                <button id="BtSobreGrupo" class="btn btn-danger" title="Sobre o grupo Sim + Saúde" onclick="location.href='SaibaMaisSobreNos.html'"> <span class="glyphicon glyphicon-info-sign"  ></span> &nbsp &nbsp Quer saber mais sobre nós?</button>
-            </div>
-        
-</div>  
 					
         </section>
         <?php require("Rodape.php")?>

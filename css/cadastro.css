@@ -258,7 +258,7 @@ input[type=button]:active
     float: right;
 }
 
-#Status
+#StatusInferior
 {
     float:              left;
     position:           relative;
@@ -268,7 +268,7 @@ input[type=button]:active
     text-align:         left;
 }
 
-#Status p
+#StatusInferior p
 {
     float:              left;
     position:           relative;
