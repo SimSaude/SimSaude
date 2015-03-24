@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*Clearfix usado para adicionar um espaço vazio antes e depois dos elementos evitando que os floats se aglomerem.*/
 .clearfix:before, .clearfix:after   { content: " "; display: table; }
 .clearfix:after                     { clear: both; }
@@ -159,12 +161,12 @@ body
 /*Mensagens de Erro*/
 .Erro
 {
-    color:           #a9302a;
+    color:				#a9302a;
     font-size:          14px;
     letter-spacing:     0px;
     min-width:          fit-content;
-	font-style:  oblique;
-	font-weight: bold;
+	font-style:			oblique;
+	font-weight:		bold;
     //background-color:   #00F;
 }
 
@@ -192,9 +194,9 @@ input[type=textarea]
     float:                  left;
     position:               relative;
     height:                 23px;
-    width:                  calc(100% - 30px);
+    width:                  calc(100% - 14px);
 	padding-left:           30px;
-    margin-bottom:          0px;
+    margin:					0 auto;
 	border:                 1px solid whitesmoke;
     border-radius:          4px;
     -moz-border-radius:     4px;
@@ -210,7 +212,6 @@ input[type=button]
     min-height:					30px;
     margin-top:                 5px;
     padding:                    5px 10px 5px 10px;
-    
     text-decoration:            none;
     cursor:						pointer;
     border:						1px solid #CDC673;

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 #Cabecalho
 {
     float:      left;
@@ -29,18 +31,15 @@
 {
     float:                  left;
     position:               static;
-    //margin:                 0 auto;
-   // display:                block;
-   margin-left:				-70px;
-   margin-top:				-30px;
+    margin:                 0 auto;
+    display:                block;
     width:                  14.88888888888889%; //12.5%; /*150px / 1200px * 100 = 12.5% */
     min-width:              270px;
     max-width:              270px;
     height:                 150px;
     background-image:       url(../imagens/logo.png);
-	
     background-repeat:      no-repeat;
-    //background-position:    center center;
+    background-position:    center center;
     background-size:        auto;
     
     //background-color: #BBB;

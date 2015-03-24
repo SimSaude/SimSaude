@@ -89,20 +89,17 @@
                 <input type="button" id="Sobre" class="ComImagem" value="Quer saber mais sobre nós?" title="Sobre o grupo Sim + Saúde" onclick="document.location.href='./'"/>
             </div>
 			-->
-			
 			<div id="Botao" class="Botao">
                 <!--  <div class="btn-group" >
                     <button class="btn btn-warning" title="Cadastre-se, é rapidinho!" onclick="document.location.href='./Cadastro.php'"> <span class="glyphicon glyphicon-ok-sign"  ></span> &nbsp &nbsp  É novo por aqui? Cadastre-se.</button>
                 </div>-->
                 <div class="btn-group">
-                    <button id="BtAjudaSistema" class="btn btn-success" title="Ajuda sobre o sistema" onclick="location.href='Ajuda.html'"> <span class="glyphicon glyphicon-question-sign"  ></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>
+                    <button id="BtAjudaSistema" class="btn btn-success" title="Ajuda sobre o sistema" onclick="document.location.href='Ajuda.php'"><span class="glyphicon glyphicon-question-sign"></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>
                 </div>
-
                 <div class="btn-group">
-                    <button id="BtSobreGrupo" class="btn btn-danger" title="Sobre o grupo Sim + Saúde" onclick="location.href='SaibaMaisSobreNos.html'"> <span class="glyphicon glyphicon-info-sign"  ></span> &nbsp &nbsp Quer saber mais sobre nós?</button>
+                    <button id="BtSobreGrupo" class="btn btn-danger" title="Sobre o grupo Sim + Saúde" onclick="document.location.href='SobreNos.php'"><span class="glyphicon glyphicon-info-sign"></span> &nbsp &nbsp Quer saber mais sobre nós?</button>
                 </div>
             </div>
-					
         </section>
         <?php require("Rodape.php")?>
     </body>

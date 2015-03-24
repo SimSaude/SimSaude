@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <?php
-    include_once ('includes/Registrar.inc.php');
-    include_once ('includes/FuncoesDeSeguranca.php');
+    /*include_once ('includes/Registrar.inc.php');
+    include_once ('includes/FuncoesDeSeguranca.php');*/
+	require("includes/Protecao.php");
+    require("includes/Funcoes.php");
+    $Rastro = new RastroDeNavegacao();
+    $Rastro->Adicionar("Cadastro", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 1);
 ?>
 <html>
     <head>
@@ -22,7 +26,7 @@
         <script type="text/JavaScript" src="js/forms.js"></script>
     </head>
     <body class="Centro clearfix">
-        <?php $ExibirMenus = false; require("Cabecalho.php");?>
+        <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
             <!-- Registration form to be output if the POST variables are not set or if the registration script caused an error. -->
             <?php if (empty($MensagemDeErro) == false) { echo $MensagemDeErro; } ?>
