@@ -46,7 +46,7 @@ body
     -moz-background-size:       cover;
     -o-background-size:         cover;
     background-size:            cover;
-    background-image:           url('../imagens/fundos/fundo_padrao.jpg');
+    //background-image:           url('../imagens/fundos/fundo_padrao.jpg');
     color:                      #7FFF00;                                                /*Cor padrão para todas as fontes*/
     font-family:                /*"Old Standard TT", */Helvetica, sans-serif, arial;    /*definição da fonte geral incorporada do Google Fonts*/
     font-size:                  1.125em;                                                /*18px ÷ 16px = 1.125em */

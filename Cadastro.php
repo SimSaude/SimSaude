@@ -50,8 +50,8 @@
                 <h1>Registre-se</h1>
                 <p class="Requerido Direita">* Campos Requeridos</p><br/>
                 <form action="<?php echo EscapeURL($_SERVER['PHP_SELF']); ?>" method="post" name="FormularioDeCadastro">
-                    <div class="ContainerDeCampos">    
-                        <div class="LinhaFormulario">
+                   <div class="ContainerDeCampos">    
+                        <div class="LinhaFormulario"> 
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_usuario" id="lbl_usuario"><span class="Requerido">*</span> Usuário</label></div>
                                 <div class="ColunaInput"><input id="txt_usuario" name="txt_usuario" type="text" aria-labelledby="lbl_usuario" autocomplete="off" maxlength="60" title="Nome usado para login. Campo necessário." autofocus required/></div>

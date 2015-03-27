@@ -3,7 +3,7 @@
     require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
-    $Rastro->Adicionar("Inicial", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
+    //$Rastro->Adicionar("Inicial", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
 ?>
 <html>
     <head><link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
