@@ -27,7 +27,7 @@
     //background-color: #AAA;
 }
 
-#Logo a
+#LogoInterno, #LogoExterno
 {
     float:                  left;
     position:               static;
@@ -37,12 +37,21 @@
     min-width:              270px;
     max-width:              270px;
     height:                 150px;
-    background-image:       url(../imagens/logo.png);
     background-repeat:      no-repeat;
     background-position:    center center;
     background-size:        auto;
     
     //background-color: #BBB;
+}
+
+#LogoInterno
+{
+    background-image:       url(../imagens/logosemtitulo.png);
+}
+
+#LogoExterno
+{
+    background-image:       url(../imagens/logocomtitulo.png);
 }
 
 #NomeDoSistema

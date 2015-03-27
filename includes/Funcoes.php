@@ -15,7 +15,7 @@
 
 class RastroDeNavegacao
 {
-   //var $Saida;
+   var $Saida;
    var $Rastros = array();
    var $Local;
 

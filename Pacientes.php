@@ -3,7 +3,7 @@
     require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
-    $Rastro->Adicionar("Teste 1", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 1);
+    $Rastro->Adicionar("Pacientes", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
 ?>
 <html>
     <head>
