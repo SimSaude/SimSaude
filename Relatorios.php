@@ -3,12 +3,13 @@
     require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
-    $Rastro->Adicionar("Tarefas", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
+    $Rastro->Adicionar("Relatórios", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="3600">
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="css/paginas.css" type="text/css">

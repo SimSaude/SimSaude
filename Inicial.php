@@ -15,12 +15,12 @@
         <link type="text/css" rel="stylesheet" href="css/cabecalho.css"/>
         <link type="text/css" rel="stylesheet" href="css/rodape.css"/>
 		<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
-        <title>Singev</title>
+        <title>Singev</title>   
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/funcoes.js"></script>
     </head>
     <body class="Centro clearfix">
-        <?php require("Cabecalho.php");?>
+        <?php $ExibirNomeSistema = false; require("Cabecalho.php");?>
         <section id="ContainerColunas">
             <div class="ColunasP3_1">
                 <figure><img src="imagens/desktop.png" width="238" height="125" alt="Teste"></figure>

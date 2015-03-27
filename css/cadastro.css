@@ -9,10 +9,7 @@
     width:		500px; /*500px*//*300px para celulares.*/
     color:		#EEE;
     border:		1px solid #080808;
-    //background-color:	#1C1C1C;    
-    box-shadow:		0 0 1px #444 inset;
-    -moz-box-shadow:	0 0 1px #444 inset;
-    -webkit-box-shadow:	0 0 1px #444 inset;
+    //background-color:	#1C1C1C;
 }
 
 #Formulario h1
@@ -41,17 +38,6 @@
     width:              490px; //calc(100% - 10px);
     padding:            5px;
     //background-color:	#1E1E1E;
-   //  border:		1px solid #0E0E0E;
-  //  -moz-box-shadow:	0 0 20px #292929 inset;
-  //  -webkit-box-shadow:	0 0 20px #292929 inset;
-  //  box-shadow:         0 0 20px #292929 inset;
-}
-
-#Formulario, .ContainerDeCampos
-{
-    -moz-border-radius:		12px;
-    -webkit-border-radius:	12px;
-    border-radius:		12px;
 }
 
 .ContainerDeBotoes
