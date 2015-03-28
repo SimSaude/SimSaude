@@ -3,7 +3,7 @@
     require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
-    //$Rastro->Adicionar("Inicial", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
+    $Rastro->Adicionar("Inicial", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
 ?>
 <html>
     <head><link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -20,7 +20,7 @@
         <script type="text/javascript" src="js/funcoes.js"></script>
     </head>
     <body class="Centro clearfix">
-        <?php $ExibirNomeSistema = false; require("Cabecalho.php");?>
+        <?php  $ExibirNomeSistema=false ;require("Cabecalho.php");?>
         <section id="ContainerColunas">
             <div class="ColunasP3_1">
                 <figure><img src="imagens/desktop.png" width="238" height="125" alt="Teste"></figure>

@@ -8,6 +8,7 @@
     //padding:    10px;
     margin:     0 auto;
     width:      100%;
+    background-image: url(../imagens/fundos/fundo_padrao.jpg);
     
     
     /*background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 40%, rgba(255,255,255,1) 31%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
@@ -35,7 +36,7 @@
     display:                block;
     width:                  14.88888888888889%; //12.5%; /*150px / 1200px * 100 = 12.5% */
     min-width:              270px;
-    max-width:              270px;
+    max-width:              100%;
     height:                 150px;
     background-repeat:      no-repeat;
     background-position:    center center;
@@ -91,7 +92,7 @@
     width:      100%;
     margin:     5px 0 0 0;
     
-    //background-color: #EEE;
+    background-color: #EEE;
 }
 
 #ContainerNavegacao
@@ -130,6 +131,8 @@
     width:      170px;
     margin:     0 auto;
     padding:    0;
+    bottom: 5px;
+    right: 90px;
 }
 
 #ContainerBusca .Procurar
@@ -138,6 +141,8 @@
     width:      70px;
     margin:     0 auto;
     padding:    0;
+    bottom: 5px;
+    right: 90px;
 }
 
 #ContainerBusca form
@@ -279,10 +284,21 @@
 {
     float:  left;   
     margin: 0 auto;
-
-    //background-color: #F00;
+    position: absolute;
+    right: 180px;
+    //background-color: #F002
 }
-
+#Menu
+{
+    float: left;
+    width:150px;
+    margin-left:auto;
+}
+#MenuComeco
+{
+    height: 46px;
+    width: 1200px;
+}
 .MenuSuperior li
 {
     background-color:   #f0f0f0;
