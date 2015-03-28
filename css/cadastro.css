@@ -9,7 +9,7 @@
     width:		calc(100% - 250px); /*500px*//*300px para celulares.*/
     color:		#EEE;
     //border:		1px solid #080808;
-    background-color:	#1C1C1C;
+    background-color:	#FFF;
 }
 
 #Formulario h1
@@ -119,6 +119,7 @@ label
     position:           relative;
     font-family:	/*Century Gothic,*/Myriad Pro,Arial,Helvetica,sans-serif;
     font-size:		13px;
+    color:              #FF1493;
     //font-weight:        bold;
     //background-color:   #CA5;
 }
@@ -140,6 +141,7 @@ input:not([type=button]),date,.Seletor
     border:                 1px solid white;
     outline:                none; /* Preventing the default Safari and Chrome text box highlight */
     color:                  #000;
+    border-color:           #FF1493;
     font-family:            Arial,Helvetica,sans-serif;
     text-indent:            2.5px;
 }
@@ -149,12 +151,12 @@ input:not([type=button]),date,.Seletor
     float:                  left;
     position:               relative;
     background:             url("../imagens/fundo_textbox.png") repeat-x scroll left top #FFFFFF;
-    border-radius:          4px;
-    -moz-border-radius:     4px;
-    -webkit-border-radius:  4px;
-    box-shadow:             1px 1px 2px #333333;    
-    -moz-box-shadow:        1px 1px 2px #333333;
-    -webkit-box-shadow:     1px 1px 2px #333333;
+    //border-radius:          4px;
+    //-moz-border-radius:     4px;
+    //-webkit-border-radius:  4px;
+    //box-shadow:             1px 1px 2px #333333;    
+    //-moz-box-shadow:        1px 1px 2px #333333;
+    //-webkit-box-shadow:     1px 1px 2px #333333;
 }
 
 input:not([type=button]):hover,
@@ -164,9 +166,9 @@ option:focus,
 .Seletor:hover,
 .Seletor:focus
 {
-    -moz-box-shadow:    0 0 8px lightblue;
+    /*-moz-box-shadow:    0 0 8px lightblue;
     -webkit-box-shadow: 0 0 8px lightblue;
-    box-shadow:         0 0 8px lightblue;
+    box-shadow:         0 0 8px lightblue;*/
 }
 
 input:not([type=button]):hover,
@@ -178,7 +180,7 @@ option:hover
 input:not([type=button]):focus,
 option:focus
 {
-    background:         #ADBDCC; 
+    background:         #FFFACD; 
 }
 
 input[type=button]
@@ -194,10 +196,10 @@ input[type=button]
     background-image:           -ms-linear-gradient(top, #7d7c7d, #000000);
     background-image:           -o-linear-gradient(top, #7d7c7d, #000000);
     background-image:           linear-gradient(to bottom, #7d7c7d, #000000);
-    -webkit-border-radius:      5;
-    -moz-border-radius:         5;
-    border-radius:              5px;
-    text-shadow:                1px 1px 2px #CCC;
+    //-webkit-border-radius:      5;
+    //-moz-border-radius:         5;
+    //border-radius:              5px;
+    //text-shadow:                1px 1px 2px #CCC;
     border:			1px solid #F4F4F4;
     text-decoration:            none;
     cursor:			pointer;
@@ -236,9 +238,9 @@ input[type=button]:active
 {
     background-color:       transparent;
     border:                 0;
-    -webkit-border-radius:  0;
-    -moz-border-radius:     0;
-    border-radius:          0;
+    //-webkit-border-radius:  0;
+    //-moz-border-radius:     0;
+    //border-radius:          0;
 }
 
 #Formulario .Requerido 
