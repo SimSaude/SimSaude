@@ -7,8 +7,11 @@
     display:    block;
     //padding:    10px;
     margin:     0 auto;
+    height:     240px;
     width:      100%;
     background-image: url(../imagens/fundos/fundo_padrao.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     
     
     /*background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 40%, rgba(255,255,255,1) 31%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
@@ -88,11 +91,11 @@
 #ContainerMenuSuperior
 {
     float:      left;
-    position:   relative;
+    position:   static;   
     width:      100%;
     margin:     5px 0 0 0;
     
-    background-color: #EEE;
+    //background-color: #EEE;
 }
 
 #ContainerNavegacao
@@ -105,6 +108,8 @@
     min-width:          47%;
     text-align:         left;
     font:               71% Lucida, Verdana, sans-serif;
+    bottom:             20px;
+    tab-size: 
     
     //background-color: #FFF;
 }
@@ -131,18 +136,18 @@
     width:      170px;
     margin:     0 auto;
     padding:    0;
-    bottom: 5px;
-    right: 90px;
+    bottom:     21px;
+    right:      90px;
 }
 
 #ContainerBusca .Procurar
 {
     float:      right;
-    width:      70px;
+    width:      69px;
     margin:     0 auto;
     padding:    0;
-    bottom: 5px;
-    right: 90px;
+    bottom:     21px;
+    right:      91px;
 }
 
 #ContainerBusca form
@@ -285,7 +290,7 @@
     float:  left;   
     margin: 0 auto;
     position: absolute;
-    right: 180px;
+    right: 400px;
     //background-color: #F002
 }
 #Menu
@@ -293,11 +298,14 @@
     float: left;
     width:145px;
     margin-left:auto;
+    bottom: 21px;
+    font-family: Arial,Helvetica,sans-serif;
 }
-#MenuComeco
+#MenuHome
 {
     height: 46px;
-    width: 170px;
+    font-family: Arial,Helvetica,sans-serif;
+    bottom: 21px;
 }
 .MenuSuperior li
 {

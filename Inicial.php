@@ -22,12 +22,13 @@
     <body class="Centro clearfix">
         <?php  $ExibirNomeSistema=false ;require("Cabecalho.php");?>
         <section id="ContainerColunas">
-            <div class="ColunasP3_1">
+            <div  id="Fomulario">
+        <!--    <div class="ColunasP3_1">
                 <figure><img src="imagens/desktop.png" width="238" height="125" alt="Teste"></figure>
                 <h3>Coluna Desktop</h3>
                 <p>
                     Texto.
-                </p>
+                </p>    
             </div>
             <div class="ColunasP3_2">
                 <figure><img src="imagens/tablet.png" width="241" height="125" alt="Teste"></figure>
@@ -38,7 +39,8 @@
             </div>
             <div class="ColunasP3_3">
                 <h3>Últimas Informações</h3>
-            </div>
+            </div>-->
+        
         </section>
         <?php require("Rodape.php")?>
     </body>

@@ -5,7 +5,7 @@
 	require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
-    $Rastro->Adicionar("Cadastro", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 1);
+    $Rastro->Adicionar("Cadastro", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
 ?>
 <html>
     <head>
@@ -15,11 +15,12 @@
 		<!--<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">-->
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster"/>
+        
         <link rel="stylesheet" href="css/paginas.css" type="text/css">
         <link rel="stylesheet" href="css/cabecalho.css" type="text/css">
         <link rel="stylesheet" href="css/cadastro.css" type="text/css">
         <link rel="stylesheet" href="css/rodape.css" type="text/css">
+        <link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/funcoes.js"></script>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
@@ -47,7 +48,7 @@
                                                                                             this.form.ConfirmarSenha);"/>
             </form>-->
             <div id="Formulario">
-                <h1>Registre-se</h1>
+                <h1><b>Registre-se</b></h1>
                 <p class="Requerido Direita">* Campos Requeridos</p><br/>
                 <form action="<?php echo EscapeURL($_SERVER['PHP_SELF']); ?>" method="post" name="FormularioDeCadastro">
                    <div class="ContainerDeCampos">    
