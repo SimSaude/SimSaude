@@ -17,11 +17,11 @@
 
     IniciarSessaoSegura();
 
-    if (ChecarLogin($ConexaoSQL) == true)
+    //if (ChecarLogin($ConexaoSQL) == true)
     {
         $Logado = "<a href='./Inicial.php' style='text-decoration: none; color: green;' title='Entrar no Sistema'>já está</a>";
     }
-    else
+    //else
     {
         $Logado = "<text style='color: red;'>não está</text>";
     }
@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="css/login.css" type="text/css" rel="stylesheet">  
 		<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
-    <body class="Centro clearfix">
+    <body class="body2" class="Centro clearfix">
         <?php $ExibirMenus = false; $ExibirNomeSistema = false; require("Cabecalho.php"); ?>   
         <section id="ContainerColunas">
             <div id="ContainerFormularioLogin">

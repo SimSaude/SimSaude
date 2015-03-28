@@ -7,9 +7,9 @@
     display:    block;
     //padding:    10px;
     margin:     0 auto;
-    height:     240px;
+    height:     210px;
     width:      100%;
-    background-image: url(../imagens/fundos/fundo_padrao.jpg);
+    background-image: url('../imagens/fundos/fundo_padrao.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     
@@ -55,7 +55,7 @@
 
 #LogoExterno
 {
-    background-image:       url(../imagens/logocomtitulo.png);
+    background-image:       url(../imagens/logocomtitulosemfundo.png);
 }
 
 #NomeDoSistema
@@ -112,8 +112,8 @@
     tab-size: 
     
     //background-color: #FFF;
-}
 
+}
 #ContainerBusca
 {
     float:              right;
@@ -136,7 +136,7 @@
     width:      170px;
     margin:     0 auto;
     padding:    0;
-    bottom:     21px;
+    bottom:     10px;
     right:      90px;
 }
 
@@ -144,9 +144,10 @@
 {
     float:      right;
     width:      69px;
+    height:     30px;
     margin:     0 auto;
     padding:    0;
-    bottom:     21px;
+    bottom:     10px;
     right:      91px;
 }
 
@@ -165,7 +166,7 @@
 
 #ContainerBusca input
 {
-    height:                 20px;
+    height:                 30px;
     width:                  200px;
     display:                block;
     outline:                none;
@@ -298,14 +299,14 @@
     float: left;
     width:145px;
     margin-left:auto;
-    bottom: 21px;
+    bottom: 10px;
     font-family: Arial,Helvetica,sans-serif;
 }
 #MenuHome
 {
     height: 46px;
     font-family: Arial,Helvetica,sans-serif;
-    bottom: 21px;
+    bottom: 10px;
 }
 .MenuSuperior li
 {
@@ -436,6 +437,7 @@
     padding:    0;
     border:     1px solid #DEDEDE;
     height:     20px;
+    bottom:     100px;
 }
 
 #Rastro ul, li
@@ -444,6 +446,7 @@
     margin:             0 auto;
     padding:            0;
     line-height:        20px;
+    bottom:     100px;
 }
 
 #Rastro .Index
@@ -452,6 +455,7 @@
     margin:         0 auto;
     padding:        0 15px 0 5px;
     color:          #777;
+    bottom:     100px;
 }
 
 #Rastro li
@@ -460,6 +464,7 @@
     margin:         0 auto;
     padding:        0 0 0 10px;
     color:          #777;
+    bottom:     100px;
 }
 
 #Rastro li a

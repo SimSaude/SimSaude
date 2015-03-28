@@ -7,7 +7,7 @@
 ?>
 <header>
     <div id="Cabecalho">
-        <?php if (ChecarLogin($ConexaoSQL) == true){ echo '<div id="LogoInterno">'; } else { echo '<div id="LogoExterno">';} ?>
+        <?php// if (ChecarLogin($ConexaoSQL) == true){ echo '<div id="LogoInterno">'; } else { echo '<div id="LogoExterno">';} ?>
             <a href="<?php if (ChecarLogin($ConexaoSQL) == true){ echo './Inicial.php'; } else { echo './'; }?>" title="Inicial"></a>
         </div>
         <?php if (isset($ExibirMenus) == false){ ?>

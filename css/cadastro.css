@@ -3,12 +3,12 @@
 #Formulario
 {    /*Container Principal*/
     position:           relative;
-    margin:		0 auto;
+    margin:             0 auto;
     padding:            0px 5px 80px 5px;
     height:             650px;
-    width:		calc(100% - 300px); /*500px*//*300px para celulares.*/
-    color:		#000;
-    //border:		1px solid #080808;
+    width:              calc(100% - 300px); /*500px*//*300px para celulares.*/
+    color:              #000;
+    //border:           1px solid #080808;
     background-color:	#FFF;
 }
 
@@ -38,6 +38,7 @@
     position:           relative;
     width:              calc(100% - 10px);
     padding:            5px;
+    left:               30px;
     //background-color:	#1E1E1E;
    //  border:		1px solid #0E0E0E;
   //  -moz-box-shadow:	0 0 20px #292929 inset;
