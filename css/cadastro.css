@@ -5,8 +5,8 @@
     position:           relative;
     margin:		0 auto;
     padding:            0px 5px 80px 5px;
-    height:             1000px;
-    width:		calc(100% - 250px); /*500px*//*300px para celulares.*/
+    height:             650px;
+    width:		calc(100% - 300px); /*500px*//*300px para celulares.*/
     color:		#EEE;
     //border:		1px solid #080808;
     background-color:	#FFF;
@@ -120,6 +120,7 @@ label
     font-family:	/*Century Gothic,*/Myriad Pro,Arial,Helvetica,sans-serif;
     font-size:		13px;
     color:              #FF1493;
+    width:              150px;
     //font-weight:        bold;
     //background-color:   #CA5;
 }
