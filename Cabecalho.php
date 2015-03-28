@@ -29,7 +29,7 @@
                         <li id="Menu"><a href="./Pacientes.php" title="Pacientes">Pacientes</a></li>
                         <li id="Menu"><a href="./Clinica.php" title="Clínica">Clínica</a></li>
                         <li id="Menu"><a href="./Relatorios.php" title="Relatórios">Relatórios</a></li>
-                        <li id="MenuComeco"><a> </a> 
+                        <li id="MenuComeco"><a>. </a> 
                         </li>
                     </ul>
                 </nav>
