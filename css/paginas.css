@@ -1,10 +1,3 @@
-@charset "utf-8";
-
-/*Clearfix usado para adicionar um espaço vazio antes e depois dos elementos evitando que os floats se aglomerem.*/
-.clearfix:before, .clearfix:after   { content: " "; display: table; }
-.clearfix:after                     { clear: both; }
-.clearfix                           { *zoom: 1; }
-
 /*Efeitos Globais*/
 @keyframes marquee  {0% { top: 300px } 100% { top: -450px }}
 .marquee            {position: relative; animation: marquee 25s linear infinite; }
@@ -12,7 +5,7 @@
 @-webkit-keyframes  blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
 @-moz-keyframes     blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
 @keyframes          blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
-.blink { text-decoration: blink; animation: blinker 0.5s ease-in-out 0s infinite alternate; -moz-animation: blinker 0.5s ease-in-out 0s infinite alternate; -webkit-animation: blinker 0.5s ease-in-out 0s infinite alternate; }
+.blink              { text-decoration: blink; animation: blinker 0.5s ease-in-out 0s infinite alternate; -moz-animation: blinker 0.5s ease-in-out 0s infinite alternate; -webkit-animation: blinker 0.5s ease-in-out 0s infinite alternate; }
 @-webkit-keyframes  pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
 @-moz-keyframes     pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
 @-o-keyframes       pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
@@ -20,11 +13,11 @@
 @keyframes          pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
 
 /*Formatação Padrão da página*/
-html, body { min-height: 100%; }
+html, body { margin: 0 auto; padding: 0; }
 
 img, picture, video, embed
 {
-    max-width: 100%; /*Define a largura máxima em até 100%*/
+    max-width: 100%;
 }
 
 a, a:link, a:visited
@@ -39,36 +32,27 @@ a:hover
 
 body
 {
-    //background-repeat:          no-repeat;
-    //background-position:        center;
-    //background-size:           contain;
-	-webkit-background-size:    cover;
-    -moz-background-size:       cover;
-    -o-background-size:         cover;
-    background-size:            cover;
-    //background-image:           url('../imagens/fundos/fundo_padrao.jpg');
-    color:                      #7FFF00;                                                /*Cor padrão para todas as fontes*/
-    font-family:                /*"Old Standard TT", */Helvetica, sans-serif, arial;    /*definição da fonte geral incorporada do Google Fonts*/
-    font-size:                  1.125em;                                                /*18px ÷ 16px = 1.125em */
+    color:                      #7FFF00;
+    font-family:                Helvetica, sans-serif, arial;
+    //font-size:                  1.125em;
     font-weight:                300;                                     
-    line-height:                1.2222222222em;                                         /*22px altura da linha*/
+    line-height:                1.2222222222em;
     text-align:                 left;
-    //text-shadow:                0.8px 0.5px 0.2px #000;
-	text-shadow:				0px 0px 1px #708090;
-    background-color:           #b6fcb6;
+    text-shadow:		0px 0px 1px #708090;
+    background-color:           #D7F9D6;
+    background-size:            cover;
+    background-repeat:          no-repeat;
 }
 
-.Centro     { margin: 0 auto; /*max-width: 1200px; width: 90%;*/ }
+.Centro     { }
 
 #ContainerColunas
 {
     float:              left;
     position:           relative;
-	padding:            0;
+    padding:            0;
     margin:             0 auto;
     width:              100%;
-	min-width:			fit-content;
-    height:             fit-content;    
     
     /*border:                 1px solid;
     -webkit-border-radius:  10px;
@@ -77,11 +61,6 @@ body
     
     //background-color:       #F00;
 }
-
-//.ContainerColunas .desktop figure, .container .tablet figure, .container .mobile figure
-//{
-//    width:              69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
-//}
 
 /*Colunas Padrão*/
 .ColunasP3_1, .ColunasP3_2, .ColunasP3_3
@@ -162,19 +141,18 @@ body
 /*Mensagens de Erro*/
 .Erro
 {
-    color:				#a9302a;
+    color:		#a9302a;
     font-size:          14px;
     letter-spacing:     0px;
     min-width:          fit-content;
-	font-style:			oblique;
-	font-weight:		bold;
+    font-style:		oblique;
+    font-weight:	bold;
     //background-color:   #00F;
 }
 
 /*Botões Padrão*/
 .Botao
 {
-    //float:          right;
     padding-right:  2px;
     margin:         0 auto;
     text-align:     center;
@@ -182,23 +160,23 @@ body
 
 input
 {
+    position:               relative;
     color:                  #000;
-	font-family:            Arial,Helvetica,sans-serif;
-	text-shadow:            0px 0px 1px #777;
-	outline:                none;
+    font-family:            Arial,Helvetica,sans-serif;
+    text-shadow:            0px 0px 1px #777;
+    outline:                none;
 }
 
 input[type=text],
 input[type=password],
 input[type=textarea]
 {
-    float:                  left;
-    position:               relative;
-    height:                 23px;
-    width:                  calc(100% - 14px);
-	padding-left:           30px;
-    margin:					0 auto;
-	border:                 1px solid whitesmoke;
+    //float:                  left;
+    //height:                 23px;
+    //width:                  calc(100% - 14px);
+    //padding-left:           30px;
+    //margin:                 0 auto;
+    border:                 1px solid whitesmoke;
     border-radius:          4px;
     -moz-border-radius:     4px;
     -webkit-border-radius:  4px;
@@ -210,12 +188,12 @@ input[type=textarea]
 input[type=button]
 {
     color:                      #1C1C1C;
-    min-height:					30px;
+    min-height:                 30px;
     margin-top:                 5px;
     padding:                    5px 10px 5px 10px;
     text-decoration:            none;
-    cursor:						pointer;
-    border:						1px solid #CDC673;
+    cursor:			pointer;
+    border:			1px solid #CDC673;
     -webkit-border-radius:      5;
     -moz-border-radius:         5;
     border-radius:              5px;
@@ -265,8 +243,7 @@ input[type=button]:active
 and (max-device-width: 320px)
 and (min-device-height: 480px)
 {
-	body		{ text-shadow: none }
-	.Centro     { margin: 0 auto; width: 90%; }
+
 }
 
 @media only screen /*Smartfones retrato*/
@@ -282,19 +259,8 @@ and (max-device-width: 480px)
 and (min-device-height: 320px)
 and (orientation: landscape)
 {
-	.Centro				{ margin: 0 auto; width: 90%; text-shadow: none; } 
-	#ContainerColunas	{ width: 100%; max-width: 100%; }
+
 }
-
-
-
-
-
-
-
-
-
-
 
 /*iPads (portrait e landscape)*/
 @media only screen

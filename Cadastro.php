@@ -1,52 +1,20 @@
 <!DOCTYPE html>
 <?php
-    /*include_once ('includes/Registrar.inc.php');
-    include_once ('includes/FuncoesDeSeguranca.php');*/
-	require("includes/Protecao.php");
+    require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
     $Rastro->Adicionar("Cadastro", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
 ?>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Registro</title>
-        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-		<!--<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">-->
-        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        
-        <link rel="stylesheet" href="css/paginas.css" type="text/css">
-        <link rel="stylesheet" href="css/cabecalho.css" type="text/css">
+        <?php require("includes/SecaoHead.php"); ?>
+        <script type="text/JavaScript" src="js/funcoes.js"></script>
         <link rel="stylesheet" href="css/cadastro.css" type="text/css">
-        <link rel="stylesheet" href="css/rodape.css" type="text/css">
-        <link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="js/funcoes.js"></script>
-        <script type="text/JavaScript" src="js/sha512.js"></script> 
-        <script type="text/JavaScript" src="js/forms.js"></script>
     </head>
     <body class="Centro clearfix">
         <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
-            <!-- Registration form to be output if the POST variables are not set or if the registration script caused an error. -->
             <?php if (empty($MensagemDeErro) == false) { echo $MensagemDeErro; } ?>
-            <!--<form action="<?php echo EscapeURL($_SERVER['PHP_SELF']); ?>" method="post" name="asd" id="asd">
-                Usuário:		<input type="text" name="Login" id="NomeUsuario"/><br/>
-                Tipo de Usuário:    <select name="TipoDeUsuario" id="TipoDeUsuario">
-                                        <option value="Operador">Operador</option>
-                                        <option value="Auditor">Auditor</option>
-                                        <option value="Administrador">Administrador</option>
-                                    </select><br/>
-                Email:		<input type="text" name="Email" id="Email"/><br/>
-                Senha:		<input type="password" name="Senha" id="Senha"/><br/>
-                Confirme a senha:	<input type="password" name="ConfirmarSenha" id="ConfirmarSenha"/><br/>
-                <input type="button" value="Registrar" onclick="return HashFormularioRegistro(this.form,
-                                                                                            this.form.NomeUsuario,
-                                                                                            this.form.Email,
-                                                                                            this.form.Senha,
-                                                                                            this.form.ConfirmarSenha);"/>
-            </form>-->
             <div id="Formulario">
                 <h1><b>Registre-se</b></h1>
                 <p class="Requerido Direita">* Campos Requeridos</p><br/>
@@ -214,11 +182,8 @@
                         <p>Retornar à <a href="./">página de login</a>.</p>
                     </div>
                     <div class="ContainerDeBotoes">
-                        <div class="Botao"><input type="button" value="Enviar Cadastro" onclick="return HashFormularioRegistro(this.form,
-                                                                                                            this.form.NomeUsuario,
-                                                                                                            this.form.Email,
-                                                                                                            this.form.Senha,
-                                                                                                            this.form.ConfirmarSenha);"/>
+                        <div class="Botao">
+                            <input type="button" value="Enviar Cadastro" onclick="return HashFormularioRegistro(this.form, this.form.NomeUsuario, this.form.Email, this.form.Senha, this.form.ConfirmarSenha);"/>
                         </div>
                     </div>
                 </form>

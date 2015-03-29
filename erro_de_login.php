@@ -1,18 +1,15 @@
 <?php
     $Erro = filter_input(INPUT_GET, 'Erro', $filter = FILTER_SANITIZE_STRING);
-    if (! $Erro)
-    {
-        $Erro = 'Um erro desconhecido ocorreu.';
-    }
+    if (! $Erro) { $Erro = 'Houve um erro desconhecido.'; }
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Erro de Login teste</title>
+        <?php require("includes/SecaoHead.php"); ?>
+        <link rel="stylesheet" href="css/paginadeerro.css" type="text/css">
     </head>
-    <body >
-        <h1>Houve um problema?</h1>
-        <p class="Erro"><?php echo $Erro; ?></p>  
+    <body class="Centro">
+        <h1>Ops</h1>
+        <p class="Erro"><?php echo $Erro; ?></p>
     </body>
 </html>

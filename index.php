@@ -3,25 +3,18 @@
 /*
     Criar página sobre.
     Criar página de ajuda.
-	Layout para 768x1024
-	Layout para 800x1280
-	Layout para 980x1280
-	Layout para 1280x6004
-	Layout para 1920x900
-	Botões da página de login responsivos.
-	Corrigir favicon
-	Esticar itens do rodapé em resoluções W maiores que 360p.
+    Corrigir favicon.
 */
     include_once('includes/ConexaoBD.php');
     include_once('includes/FuncoesDeSeguranca.php');
 
     IniciarSessaoSegura();
 
-    //if (ChecarLogin($ConexaoSQL) == true)
+    if (ChecarLogin($ConexaoSQL) == true)
     {
-        $Logado = "<a href='./Inicial.php' style='text-decoration: none; color: green;' title='Entrar no Sistema'>já está</a>";
+        $Logado = "<a href='./Inicial.php' title='Entrar no Sistema'>já está</a>";
     }
-    //else
+    else
     {
         $Logado = "<text style='color: red;'>não está</text>";
     }
@@ -29,10 +22,11 @@
 <html lang="pt-br"> 
     <head>
         <?php require("includes/SecaoHead.php"); ?>
-        <link rel="stylesheet" href="css/login.css" type="text/css" rel="stylesheet">  
-		<link href="css/boot/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="css/login.css" type="text/css" rel="stylesheet">
+        <script type="text/JavaScript" src="js/sha512.js"></script>
+        <script type="text/JavaScript" src="js/forms.js"></script>
     </head>
-    <body class="body2" class="Centro clearfix">
+    <body class="Centro">
         <?php $ExibirMenus = false; $ExibirNomeSistema = false; require("Cabecalho.php"); ?>   
         <section id="ContainerColunas">
             <div id="ContainerFormularioLogin">
@@ -78,21 +72,7 @@
                     </div>
                 </form>
             </div>
-            <!--<div class="Botao">
-                <input type="button" id="Cadastro" class="ComImagem" value="É novo por aqui? Cadastre-se!" title="Cadastrar-se no Sistema" onclick="document.location.href='./Cadastro.php'"/>
-            </div>-->
-			<!--
-            <div class="Botao" style="margin-top:5%;">
-                <input type="button" id="Ajuda" class="ComImagem" value="Precisa de ajuda?" title="Ajuda sobre o sistema" onclick="document.location.href='./'"/>
-            </div>
-            <div class="Botao">
-                <input type="button" id="Sobre" class="ComImagem" value="Quer saber mais sobre nós?" title="Sobre o grupo Sim + Saúde" onclick="document.location.href='./'"/>
-            </div>
-			-->
-			<div id="Botao" class="Botao">
-                <!--  <div class="btn-group" >
-                    <button class="btn btn-warning" title="Cadastre-se, é rapidinho!" onclick="document.location.href='./Cadastro.php'"> <span class="glyphicon glyphicon-ok-sign"  ></span> &nbsp &nbsp  É novo por aqui? Cadastre-se.</button>
-                </div>-->
+            <div id="Botao" class="Botao">
                 <div class="btn-group">
                     <button id="BtAjudaSistema" class="btn btn-success" title="Ajuda sobre o sistema" onclick="document.location.href='Ajuda.php'"><span class="glyphicon glyphicon-question-sign"></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>
                 </div>

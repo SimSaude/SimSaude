@@ -5,9 +5,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Registrado com sucesso.</title>
-        <link rel="stylesheet" href="css/paginas.css"/>
+        <?php require("includes/SecaoHead.php"); ?>
     </head>
     <body>
         <h1>Registro concluído.</h1>

@@ -3,21 +3,11 @@
     require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
-    $Rastro->Adicionar("Relatórios", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
+    $Rastro->Adicionar("Relatórios", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 4);
 ?>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="3600">
-        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="css/paginas.css" type="text/css">
-        <link rel="stylesheet" href="css/cabecalho.css" type="text/css">
-        <link rel="stylesheet" href="css/rodape.css" type="text/css">
-        <title>Singev</title>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="js/funcoes.js"></script>
+        <?php require("includes/SecaoHead.php"); ?>
     </head>
     <body class="Centro clearfix">
         <?php require("Cabecalho.php");?>
