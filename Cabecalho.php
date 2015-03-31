@@ -11,13 +11,13 @@
             <a href="<?php if (ChecarLogin($ConexaoSQL) == true){ echo './Inicial.php'; } else { echo './'; }?>" title="Inicial"></a>
         </div>
         <?php if (isset($ExibirMenus) == false){ ?>
-            <div id="ContainerDadosDoUsuario">
-                <label class="NomeUsuario"><?php if(isset($_SESSION['NomeCompleto'])){ echo "<a href='./' title='Meu Cadastro'>".$_SESSION['NomeCompleto']."</a> | "; } ?></label>
-                <label class="Sair"><a href="./Logout.php" title="Sair do Sistema">Sair</a></label>
-            </div>
             <div id="ContainerNavegacao">
                 <label>Você está em:</label>
                 <?php $Rastro->Saida(); ?>
+            </div>
+            <div id="ContainerDadosDoUsuario">
+                <label class="NomeUsuario"><?php echo "<a href='./' title='Meu Cadastro'>"; if(isset($_SESSION['NomeCompleto'])){ echo $_SESSION['NomeCompleto']; } else { echo "Usuário não logado"; } echo "</a> | "; ?></label>
+                <label class="Sair"><a href="./Logout.php" title="Sair do Sistema">Sair</a></label>
             </div>
             <div id="ContainerMenuSuperior">
                 <nav>

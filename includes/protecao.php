@@ -4,7 +4,7 @@
 
     IniciarSessaoSegura();
     
-    if (ChecarLogin($ConexaoSQL) == false)
+    /*if (ChecarLogin($ConexaoSQL) == false)
     {
         header('Location: ./?Erro=2');
-    }
+    }*/

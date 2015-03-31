@@ -9,28 +9,28 @@
     <head>
         <?php require("includes/SecaoHead.php"); ?>
     </head>
-    <body class="Centro clearfix">
+    <body>
         <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
-            <div class="ColunasP3_1">
-                <figure><img src="imagens/desktop.png" width="238" height="125" alt="Teste"></figure>
-                <h3>Coluna Desktop</h3>
+            <div class="Colunas Coluna1_3">
+                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
+                <h3>Relatórios</h3>
                 <p>
-                    Texto.
+                    Coluna 1.
+                </p>    
+            </div>
+            <div class="Colunas Coluna2_3">
+                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
+                <h3>Relatórios</h3>
+                <p>
+                    Coluna 2.
                 </p>
             </div>
-            <div class="ColunasP3_2">
-                <figure><img src="imagens/tablet.png" width="241" height="125" alt="Teste"></figure>
-                <h3>Coluna Tablet</h3>
+            <div class="Colunas Coluna3_3">
+                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
+                <h3>Relatórios</h3>
                 <p>
-                    Texto.
-                </p>
-            </div>
-            <div class="ColunasP3_3">
-                <figure><img src="imagens/mobile.png" width="194" height="125" alt="Teste"></figure>
-                <h3>Coluna Mobile</h3>
-                <p>
-                    Texto.
+                    Coluna 3.
                 </p>
             </div>
         </section>

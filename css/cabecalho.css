@@ -1,21 +1,29 @@
 #Cabecalho
 {
-    float:              left;
-    position:           relative;
-    display:            block;
-    margin:             0 auto;
-    height:             210px;
-    width:              100%;
-    background:         transparent url('../imagens/fundos/fundo_padrao.jpg') no-repeat fixed left top;
-    background-size:    100%;
-    text-shadow:        none;
+    float:                  left;
+    position:               relative;
+    display:                block;
+    margin:                 0 auto;
+    height:                 235px;
+    width:                  100%;
+    
+    background-image:       linear-gradient(to right, #C6F7A6 10%, transparent 50%), url('../imagens/fundos/fundo_padrao.jpg');
+    background-position:    bottom right, 0 calc(100% - 450px);
+    background-repeat:      initial, no-repeat;
+    background-size:        cover;
+    background-attachment:  fixed;
 }
 
 #Logo
 {
-    float:                  left;
-    position:               relative;
-    margin:                 0 auto;
+    float:          left;
+    position:       relative;
+    margin-bottom:  15px;
+    width:          100%;
+}
+
+#Logo a
+{
     display:                block;
     width:                  250px;
     height:                 141px;
@@ -28,17 +36,26 @@
 
 #ContainerDadosDoUsuario
 {
-    float:          left;
+    float:          right;
     position:       relative;
-    width:          calc(100% - 250px);
-    height:         20px;
+    margin-right:   10px;
+    width:          calc(25% - 10px);
+    height:         22px;
+    min-width:      200px;
+    text-align:     right;
     //background-color: #DDD;
+}
+
+#ContainerDadosDoUsuario label
+{
+    display:        inline;
 }
 
 #ContainerMenuSuperior
 {
     float:      left;
-    position:   relative;  
+    position:   relative;
+    margin-top: 11px;
     width:      100%;
     height:     46px;
     
@@ -188,8 +205,12 @@
 {
     float:              left;
     position:           relative;
-    width:              100%;
+    //margin:             21px 0 5px 0;
+    width:              75%;
+    height:             22px;
+    min-width:          515px;
     text-align:         left;
+    text-shadow:        none;
     //background-color: #FF0;
 }
 
@@ -396,10 +417,9 @@
 #Rastro li a:visited
 {
     color:              #777;
-    text-decoration:    none;
+    
 }
 
-a:link, a:visited,	
 #Rastro li a:hover,
 #Rastro li a:focus
 {

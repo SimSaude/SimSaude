@@ -9,7 +9,7 @@
     <head>
         <?php require("includes/SecaoHead.php"); ?>
     </head>
-    <body class="Centro clearfix">
+    <body>
         <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
             <div class="ColunasP3_1">

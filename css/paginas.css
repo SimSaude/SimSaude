@@ -13,7 +13,7 @@
 @keyframes          pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
 
 /*Formatação Padrão da página*/
-html, body { margin: 0 auto; padding: 0; }
+html, body { margin: 0 auto; padding: 0; width: 100%; height: 100%; }
 
 img, picture, video, embed
 {
@@ -22,137 +22,153 @@ img, picture, video, embed
 
 a, a:link, a:visited
 {
-    
+    color:              #CD5C5C;
+    text-decoration:    none;
+    font-weight:        bold;
+    cursor:             pointer;
 }
 
 a:hover
 {
-    
+    color: #B22222;
+}
+
+label
+{
+    cursor: default;
+}
+
+h1
+{
+    text-align: center;
 }
 
 body
 {
-    color:                      #7FFF00;
-    font-family:                Helvetica, sans-serif, arial;
-    //font-size:                  1.125em;
-    font-weight:                300;                                     
-    line-height:                1.2222222222em;
-    text-align:                 left;
-    text-shadow:		0px 0px 1px #708090;
-    background-color:           #D7F9D6;
-    background-size:            cover;
-    background-repeat:          no-repeat;
+    color:          #000;
+    //font-size:    1.125em;
+    font-weight:    300;                                     
+    line-height:    1.2222222222em;
+    text-align:     left;
+    text-shadow:    0px 0px 1px #708090;
+    background:     #C6F7A6;
+    background:     -moz-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #C6F7A6), color-stop(100%, #93E346));
+    background:     -webkit-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     -o-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     -ms-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     radial-gradient(ellipse at center, #C6F7A6 0%, #93E346 100%);
+    filter:         progid:DXImageTransform.Microsoft.gradient(startColorstr='#C6F7A6', endColorstr='#93E346', GradientType=1);
 }
-
-.Centro     { }
 
 #ContainerColunas
 {
     float:              left;
     position:           relative;
     padding:            0;
-    margin:             0 auto;
-    width:              100%;
+    margin:             10px 0 10px 0.5%;
+    width:              99%;
+    height:             600px;
+    max-height:         600px;
+    overflow:           auto;
     
-    /*border:                 1px solid;
-    -webkit-border-radius:  10px;
-    -moz-border-radius:     10px;
-    border-radius:          10px;*/
+    -moz-box-shadow:        inset 0 0 400px 200px #EEE;
+    -webkit-box-shadow:     inset 0 0 400px 200px #EEE;
+    box-shadow:             inset 0 0 400px 200px #EEE;
+    -webkit-border-radius:  25px;
+    -moz-border-radius:     25px;
+    border-radius:          25px;
+    border:                 1px solid #AAA;
     
     //background-color:       #F00;
 }
 
-/*Colunas Padrão*/
-.ColunasP3_1, .ColunasP3_2, .ColunasP3_3
+.Colunas
 {
-    float:              left;
-    position:           relative;
-    text-align:         center;
-    width:              31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
-    height:             310px;
-    overflow:           hidden;
-}
+    float:                  left;
+    position:               relative;
+    min-width:              360px;
 
-.ColunasP3_1, .ColunasP3_2
-{
-    margin-right:       30px;
-    margin-right:       2.631578947368421%; /* 30px ÷ 1140px =  0.02631578947368421 x 100 = 2.631578947368421%*/
-}
-
-.ColunasP2_1, .ColunasP2_2
-{
-    float:              left;
-    position:           relative;
-    width:              31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
-}
-
-.ColunasP1_1
-{
-    float:              left;
-    position:           relative;
-    width:              31.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
-}
-
-/*Coluna da Esquerda Maior*/
-.ColunasE2_1
-{
-    
-}
-
-.ColunasE2_2
-{
-    
-}
-
-/*Colunas da Direita Maiores*/
-.ColunasD2_1
-{
-    
-}
-
-.ColunasD2_2
-{
-    
-}
-
-.ColunasP3_1 { background-color: #AAA; margin-left : 0; }
-.ColunasP3_2 { background-color: #BBB; }
-.ColunasP3_3 { background-color: #CCC; margin-right: 0; }
-
-/*Imagens*/
-#ColunasP3_1 img, #ColunasP3_2 img, #ColunasP3_3 img
-{
-    margin:        10px auto -15px auto;
-    text-align:    center;
-}
-
-/*Formatação do Texto*/
-.ColunasP3_1, .ColunasP3_2, .ColunasP3_3,
-.ColunasP3_1, .ColunasP3_2,
-.ColunasP1_1
-{
-    //color:          #FFF;
     font-size:      32px;
     font-weight:    300;
     margin-bottom:  30px;
     text-shadow:    none;
+    
+    text-align:     center;
 }
 
-/*Mensagens de Erro*/
-.Erro
+/*Colunas Padrão*/
+#Colunas img
 {
-    color:		#a9302a;
-    font-size:          14px;
-    letter-spacing:     0px;
+    margin: 10px auto -15px auto;
+}
+
+.Coluna1_1
+{
+    width: 97.4%;
+    margin-left: 1.2555555555%;
+}
+
+.Coluna1_2, .Coluna2_2
+{
+    width: 48.1%;
+    max-width: 860px;
+}
+
+.Coluna1_2
+{
+    margin-left: calc(100% / 2 - 47.6% - 17px);
+}
+
+.Coluna2_2
+{
+    float: right;
+    margin-right: calc(100% / 2 - 47.6% - 17px);
+}
+
+.Coluna1_3, .Coluna2_3, .Coluna3_3
+{
+    width: 31.57894736842105%;
+    margin-left: calc(100% / 3 - 32.111111111%);
+}
+
+/*Coluna da Esquerda Maior*/
+.Coluna1_2E
+{
+    
+}
+
+.Coluna2_2E
+{
+    
+}
+
+/*Coluna da Direita Maior*/
+.Coluna1_2D
+{
+    
+}
+
+.Coluna2_2D
+{
+    
+}
+
+.ContainerDeBotoes
+{
+    float:              right;
     min-width:          fit-content;
-    font-style:		oblique;
-    font-weight:	bold;
-    //background-color:   #00F;
+    position:           relative;
+    margin-right:       -1%;
+    padding:            0;
+    height:             40px;
+    //background-color:   #004400;
 }
 
 /*Botões Padrão*/
 .Botao
 {
+    float:          bottom;
     padding-right:  2px;
     margin:         0 auto;
     text-align:     center;
@@ -161,7 +177,6 @@ body
 input
 {
     position:               relative;
-    color:                  #000;
     font-family:            Arial,Helvetica,sans-serif;
     text-shadow:            0px 0px 1px #777;
     outline:                none;
@@ -171,11 +186,11 @@ input[type=text],
 input[type=password],
 input[type=textarea]
 {
-    //float:                  left;
+    float:                  left;
     //height:                 23px;
-    //width:                  calc(100% - 14px);
+    width:                  calc(100% - 15px);
     //padding-left:           30px;
-    //margin:                 0 auto;
+    margin:                 0 auto;
     border:                 1px solid whitesmoke;
     border-radius:          4px;
     -moz-border-radius:     4px;
@@ -236,7 +251,6 @@ input[type=button]:active
     background-size:        16px 16px, cover;
     background-position:    center, top left; 
 }
-
 
 /*Código responsivo*/
 @media only screen /*Smartfones*/

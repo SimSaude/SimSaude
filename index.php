@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <?php
-/*
-    Criar página sobre.
-    Criar página de ajuda.
-    Corrigir favicon.
-*/
     include_once('includes/ConexaoBD.php');
     include_once('includes/FuncoesDeSeguranca.php');
 
@@ -26,8 +21,8 @@
         <script type="text/JavaScript" src="js/sha512.js"></script>
         <script type="text/JavaScript" src="js/forms.js"></script>
     </head>
-    <body class="Centro">
-        <?php $ExibirMenus = false; $ExibirNomeSistema = false; require("Cabecalho.php"); ?>   
+    <body>
+        <?php $ExibirMenus = false; require("Cabecalho.php"); ?>   
         <section id="ContainerColunas">
             <div id="ContainerFormularioLogin">
                 <h1>Login</h1>
@@ -52,7 +47,7 @@
                             switch ($_GET['Erro'])
                             {
                                 case 1:
-                                    echo '<p class="Erro">Erro ao fazer login.</p>';
+                                    echo '<p class="Erro">Não foi possível realizar o login.</p>';
                                     break;
                                 case 2:
                                     echo '<p class="Erro">Sem permissão. Faça Login.</p>';
@@ -72,13 +67,11 @@
                     </div>
                 </form>
             </div>
-            <div id="Botao" class="Botao">
-                <div class="btn-group">
-                    <button id="BtAjudaSistema" class="btn btn-success" title="Ajuda sobre o sistema" onclick="document.location.href='Ajuda.php'"><span class="glyphicon glyphicon-question-sign"></span> &nbsp &nbsp Precisa de Ajuda? Clique aqui.</button>
-                </div>
-                <div class="btn-group">
-                    <button id="BtSobreGrupo" class="btn btn-danger" title="Sobre o grupo Sim + Saúde" onclick="document.location.href='SobreNos.php'"><span class="glyphicon glyphicon-info-sign"></span> &nbsp &nbsp Quer saber mais sobre nós?</button>
-                </div>
+            <div class="Botao">
+                <input type="button" id="Sobre" class="ComImagem" value="Quer saber mais sobre nós?" title="Sobre o grupo Sim + Saúde" onclick="document.location.href='SobreNos.php'"/>
+            </div>
+            <div class="Botao">
+                <input type="button" id="Ajuda" class="ComImagem" value="Precisa de ajuda?" title="Ajuda sobre o sistema" onclick="document.location.href='Ajuda.php'"/>
             </div>
         </section>
         <?php require("Rodape.php")?>

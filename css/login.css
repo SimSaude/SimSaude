@@ -1,21 +1,29 @@
-body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
-#Cabecalho  { background-image: none; }
+body                { background: transparent url(../imagens/fundos/fundo_padrao.jpg) fixed top left no-repeat; background-size: cover; }
+#Cabecalho          { background: none; }
+#ContainerColunas   { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none;}
 
 /*Container Principal*/
 #ContainerFormularioLogin
 {
-    position:	relative;
-    margin:		0 auto;
-    padding:	1px 5px 40px 0px;
-    width:		calc(100% / 2 - 138px);
-    min-width:  250px;
-	max-width:	500px;  
+    position:               relative;
+    margin:                 0 auto;
+    padding:                1px 5px 30px 0px;
+    width:                  500px;
+    -moz-box-shadow:        0 0 100px #DDD inset;
+    -webkit-box-shadow:     0 0 100px #DDD inset;
+    box-shadow:             0 0 100px #DDD inset;
+    -webkit-border-radius:  15px;
+    -moz-border-radius:     15px;
+    border-radius:          15px;
+    border:                 1px solid #AAA;
     //background-color:   #000000;
 }
 
 #ContainerFormularioLogin h1
 {
-	width:				101%;
+    margin:             2px 0 0 7.5px;
+    width:              calc(100% - 10px);
+    min-width:          250px;
     font-family:        Century Gothic, Old Standard TT, Myriad Pro, Arial, Helvetica, Sans-Serif;
     font-size:          2em;
     font-weight:        normal;
@@ -25,40 +33,33 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
 
 .StatusSuperior
 {
-	float:              right;
-    margin-right:       -1%;
-	width:              101%;
-	height:             18px;
-    color:              #F90;
+    float:              left;
+    margin:             0 0 0 7.5px;
+    height:             18px;
+    width:              calc(100% - 10px);
+    min-width:          250px;
     font-size:          12px;
     letter-spacing:     0px;
     text-align:         right;
-	font-weight:		bold;
+    font-weight:	bold;
     //background-color:   #000044;
 }
 
 .ContainerDeCampos
 {
-    height:             90px;
-    width:              101%;
+    height:             77px;
+    width:              calc(100% - 10px);
     min-width:          250px;
-	margin:				0 auto;
+    margin:             0 0 0 7.5px;
     //background-color:   #00FF88;
 }
 
 #StatusInferior
 {
     float:              left;
+    margin:             0 0 0 7.5px;
     position:           relative;
     //background-color:   #0000CC;
-}
-
-#StatusInferior p
-{
-    float:              left;
-    position:           relative;
-    margin:             0 auto;
-    //background-color:   #0000FF;
 }
 
 .ContainerDeBotoes
@@ -66,7 +67,7 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
     float:              right;
     min-width:          fit-content;
     position:           relative;
-    margin-right:       -1%;
+    margin:             0 2.5px 0 0;
     padding:            0;
     height:             40px;
     //background-color:   #004400;
@@ -113,7 +114,7 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
     background-image:       url("../imagens/icones/icone_usuario.png");
     background-repeat:      no-repeat;
     background-position:    7px 5px;
-	text-indent:            23px;
+    text-indent:            23px;
 }
 
 #Senha
@@ -123,7 +124,7 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
     background-image:       url("../imagens/icones/icone_senha.png");
     background-repeat:      no-repeat;
     background-position:    7px 5px;
-	text-indent:            23px;
+    text-indent:            23px;
 }
 
 #Entrar
@@ -140,7 +141,6 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
     background-repeat:     no-repeat;
     background-position:   7px 6px, top left;
     background-size:       16px 16px, cover;
-	margin-top:			   5px;
 }
 
 #Entrar:hover
@@ -163,44 +163,13 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
     background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #006900, #003600);
 }
 
-#BtAjudaSistema2
+#Sobre
 {
-	width:					calc(100% / 4 - 8px);
-    background-image:		url("../imagens/icones/icone_questao.png"), -webkit-linear-gradient(top, #FFF68F, #CDC673);
-    background-image:		url("../imagens/icones/icone_questao.png"), -moz-linear-gradient(top, #FFF68F, #CDC673);
-    background-image:		url("../imagens/icones/icone_questao.png"), -ms-linear-gradient(top, #FFF68F, #CDC673);
-    background-image:		url("../imagens/icones/icone_questao.png"), -o-linear-gradient(top, #FFF68F, #CDC673);
-    background-image:		url("../imagens/icones/icone_questao.png"), linear-gradient(to bottom, #FFF68F, #CDC673);
-    background-repeat:		no-repeat;
-    background-position:	7px 6px, top left;
-    background-size:		16px 16px, cover;
-}
-
-#BtAjudaSistema2:Hover
-{
-    background-image:	url("../imagens/icones/icone_questao.png"), -webkit-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/icones/icone_questao.png"), -moz-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/icones/icone_questao.png"), -ms-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/icones/icone_questao.png"), -o-linear-gradient(top, #EEE685, #8B864E);
-    background-image:	url("../imagens/icones/icone_questao.png"), linear-gradient(to bottom, #EEE685, #8B864E);
-}
-
-#BtAjudaSistema:Active
-{
-    color:                  transparent;
-    background-image:       url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #006900, #003600);
-    background-image:       url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #006900, #003600);
-    background-image:       url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #006900, #003600);
-    background-image:       url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #006900, #003600);
-    background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #006900, #003600);
-	background-repeat:		no-repeat;
-    background-position:	7px 6px, top left;
-    background-size:		16px 16px, cover;
-}
-
-#BtSobreGrupo2
-{
-	width:					calc(100% / 4 - 8px);
+    float:                      left;
+    margin-left:                calc(100% / 2 - 220px);
+    margin-top:                 25px;
+    margin-bottom:              25px;
+    width:                      220px;
     background-image:		url("../imagens/icones/icone_informacao.png"), -webkit-linear-gradient(top, #FFF68F, #CDC673);
     background-image:		url("../imagens/icones/icone_informacao.png"), -moz-linear-gradient(top, #FFF68F, #CDC673);
     background-image:		url("../imagens/icones/icone_informacao.png"), -ms-linear-gradient(top, #FFF68F, #CDC673);
@@ -211,7 +180,7 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
     background-size:		16px 16px, cover;
 }
 
-#BtSobreGrupo2:Hover
+#Sobre:Hover
 {
     background-image:   url("../imagens/icones/icone_informacao.png"), -webkit-linear-gradient(top, #EEE685, #8B864E);
     background-image:   url("../imagens/icones/icone_informacao.png"), -moz-linear-gradient(top, #EEE685, #8B864E);
@@ -220,21 +189,47 @@ body        { background-image: url(../imagens/fundos/fundo_padrao.jpg); }
     background-image:   url("../imagens/icones/icone_informacao.png"), linear-gradient(to bottom, #EEE685, #8B864E);
 }
 
-#BtSobreGrupo:Active
+#Sobre:Active
 {
-	color:					#c12e2a;
-    background-image:       url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #c12e2a, #c12e2a);
-    background-image:       url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #c12e2a, #c12e2a);
-    background-image:       url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #c12e2a, #c12e2a);
-    background-image:       url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #c12e2a, #c12e2a);
-    background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #c12e2a, #c12e2a);
-	background-repeat:		no-repeat;
-    background-position:	7px 6px, top left;
-    background-size:		16px 16px, cover;
-	
+    background-image:	url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #EEE685, #8B864E);
 }
 
-/*#Botao
+#Ajuda
 {
-	margin-top: 12%;
-}*/
+    float:                      left;
+    margin-left:                5px;
+    margin-top:                 25px;
+    margin-bottom:              25px;
+    width:                      220px;
+    background-image:		url("../imagens/icones/icone_questao.png"), -webkit-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:		url("../imagens/icones/icone_questao.png"), -moz-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:		url("../imagens/icones/icone_questao.png"), -ms-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:		url("../imagens/icones/icone_questao.png"), -o-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:		url("../imagens/icones/icone_questao.png"), linear-gradient(to bottom, #FFF68F, #CDC673);
+    background-repeat:		no-repeat;
+    background-position:	7px 6px, top left;
+    background-size:		16px 16px, cover;
+}
+
+#Ajuda:Hover
+{
+    background-image:	url("../imagens/icones/icone_questao.png"), -webkit-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/icones/icone_questao.png"), -moz-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/icones/icone_questao.png"), -ms-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/icones/icone_questao.png"), -o-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/icones/icone_questao.png"), linear-gradient(to bottom, #EEE685, #8B864E);
+}
+
+#Ajuda:Active
+{
+    background-image:	url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #EEE685, #8B864E);
+    background-image:	url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #EEE685, #8B864E);
+}
+

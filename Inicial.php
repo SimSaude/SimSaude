@@ -9,26 +9,15 @@
     <head>  
         <?php require("includes/SecaoHead.php"); ?>
     </head>
-    <body class="Centro">
+    <body>
         <?php require("Cabecalho.php"); ?>
         <section id="ContainerColunas">
-            <div class="ColunasP3_1">
-                <figure><img src="" width="" height="" alt=""></figure>
-                <h3></h3>
+            <div class="Colunas Coluna1_1">
+                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
+                <h3>Inicial</h3>
                 <p>
+                    Coluna 1.
                 </p>    
-            </div>
-            <div class="ColunasP3_2">
-                <figure><img src="" width="" height="" alt=""></figure>
-                <h3></h3>
-                <p>
-                </p>
-            </div>
-            <div class="ColunasP3_3">
-                <figure><img src="" width="" height="" alt=""></figure>
-                <h3></h3>
-                <p>
-                </p>
             </div>
         </section>
         <?php require("Rodape.php")?>

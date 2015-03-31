@@ -8,7 +8,7 @@
         <?php require("includes/SecaoHead.php"); ?>
         <link rel="stylesheet" href="css/paginadeerro.css" type="text/css">
     </head>
-    <body class="Centro">
+    <body>
         <h1>Ops</h1>
         <p class="Erro"><?php echo $Erro; ?></p>
     </body>

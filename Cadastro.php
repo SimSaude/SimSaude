@@ -3,7 +3,7 @@
     require("includes/Protecao.php");
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
-    $Rastro->Adicionar("Cadastro", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 0);
+    $Rastro->Adicionar("Cadastro", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 1);
 ?>
 <html>
     <head>
@@ -11,7 +11,7 @@
         <script type="text/JavaScript" src="js/funcoes.js"></script>
         <link rel="stylesheet" href="css/cadastro.css" type="text/css">
     </head>
-    <body class="Centro clearfix">
+    <body>
         <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
             <?php if (empty($MensagemDeErro) == false) { echo $MensagemDeErro; } ?>
@@ -67,7 +67,7 @@
                         </div>
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
-                                <div class="ColunaLabel"><label for="txt_cpf" id="lbl_cpf">CPF</label></div>
+                                <div class="ColunaLabel"><label for="txt_cpf" id="lbl_cpf"><span class="Requerido">*</span> CPF</label></div>
                                 <div class="ColunaInput"><input id="txt_cpf" name="txt_cpf" type="text" aria-labelledby="lbl_cpf" maxlength="11"/></div>
                             </div>
                             <div class="MeiaColuna">
@@ -179,7 +179,7 @@
                         </div>
                     </div>
                     <div ID="StatusInferior">
-                        <p>Retornar à <a href="./">página de login</a>.</p>
+                        
                     </div>
                     <div class="ContainerDeBotoes">
                         <div class="Botao">
