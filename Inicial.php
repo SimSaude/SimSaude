@@ -11,7 +11,7 @@
         <script type="text/JavaScript" src="js/Widgets.js"></script>
         <style>
             .no-close .ui-dialog-titlebar-close { display: none; }
-            .Coluna                             { margin-left: 15px; width: calc(100% / 3 - 15px); min-width: 200px; max-width: 310px; float: left; padding-bottom: 100px; }
+            .Coluna                             { margin-left: 15px; width: calc(100% / 3 - 15px); min-width: 200px; max-width: 310px; float: left; /*padding-bottom: 100px;*/ }
             .Portlet                            { margin: 0 1em 1em 0; padding: 0.3em; }
             .Portlet-titulo                     { padding: 0.2em 0.3em; margin-bottom: 0.5em; position: relative; cursor: move; }
             .Portlet-permutar                   { position: absolute; top: 50%; right: 0; margin-top: -8px; }
@@ -25,37 +25,9 @@
             <div class="Colunas Coluna1_2">
                 <h3>Consultas</h3>
                 <div class="Coluna">
-                    <div class="Portlet">
+                    <div class="Portlet" style="min-width: 280px;">
                         <div class="Portlet-titulo">Consultas do Mês</div>
                         <div class="Portlet-conteudo"><div id="datepicker"></div></div>
-                    </div>
-                    <div class="Portlet">
-                        <div class="Portlet-titulo">Teste</div>
-                        <div class="Portlet-conteudo">Arraste-me.</div>
-                    </div>
-                    <div class="Portlet">
-                        <div class="Portlet-titulo">Teste</div>
-                        <div class="Portlet-conteudo">Arraste-me.</div>
-                    </div>
-                </div>
-                <div class="Coluna">
-                    <div class="Portlet">
-                        <div class="Portlet-titulo">Teste</div>
-                        <div class="Portlet-conteudo">Arraste-me.</div>
-                    </div>
-                    <div class="Portlet">
-                        <div class="Portlet-titulo">Teste</div>
-                        <div class="Portlet-conteudo">Arraste-me.</div>
-                    </div>
-                </div>
-                <div class="Coluna">
-                    <div class="Portlet">
-                        <div class="Portlet-titulo">Teste</div>
-                        <div class="Portlet-conteudo">Arraste-me.</div>
-                    </div>
-                    <div class="Portlet">
-                        <div class="Portlet-titulo">Teste</div>
-                        <div class="Portlet-conteudo">Arraste-me.</div>
                     </div>
                 </div>
             </div>
@@ -88,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div id="dialog" title="Teste diálogo modal">Mensagem de teste.</div>
+            <div id="dialog" title="Teste diálogo modal">Diálogo modal.<br/>AutoClose em 2.5 segundos.</div>
         </section>
         <?php require("Rodape.php")?>
     </body>
