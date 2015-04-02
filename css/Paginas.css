@@ -1,0 +1,309 @@
+@import url("Normalize.css");
+@import url("DefinicoesPadrao.css");
+@import url("EfeitosGlobais.css");
+@import url("Colunas.css");
+@import url("Cabecalho.css");
+@import url("Rodape.css");
+
+html
+{
+    color:          #000;
+    font-family:    "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:      14px;                                  
+    line-height:    1.2222222222em;
+    text-align:     left;
+    text-shadow:    0px 0px 1px #708090;
+    text-rendering: optimizeLegibility;
+    background:     #C6F7A6;
+    background:     -moz-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #C6F7A6), color-stop(100%, #93E346));
+    background:     -webkit-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     -o-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     -ms-radial-gradient(center, ellipse cover, #C6F7A6 0%, #93E346 100%);
+    background:     radial-gradient(ellipse at center, #C6F7A6 0%, #93E346 100%);
+    filter:         progid:DXImageTransform.Microsoft.gradient(startColorstr='#C6F7A6', endColorstr='#93E346', GradientType=1);
+}
+
+.ContainerDeBotoes
+{
+    float:              right;
+    min-width:          fit-content;
+    position:           relative;
+    margin-right:       -1%;
+    padding:            0;
+    height:             40px;
+    //background-color:   #004400;
+}
+
+.Botao
+{
+    float:          bottom;
+    padding-right:  2px;
+    margin:         0 auto;
+    text-align:     center;
+}
+
+select, textarea,
+input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"],
+input[type="number"], input[type="email"],
+input[type="url"], input[type="search"],
+input[type="tel"], input[type="color"],
+.uneditable-input
+{
+    padding:                4px 6px;
+    position:               relative;
+    display:                inline-block;
+    height:                 20px;
+    color:                  #555;
+    font-family:            Arial,Helvetica,sans-serif;
+    text-shadow:            0px 0px 1px #777;
+    vertical-align:         middle;
+    outline:                none;
+    transition:             border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+select:focus:invalid:focus, textarea:focus:invalid:focus,
+input[type="text"]:focus:invalid:focus, input[type="password"]:focus:invalid:focus,
+input[type="datetime"]:focus:invalid:focus, input[type="datetime-local"], input[type="date"]:focus:invalid:focus,
+input[type="month"]:focus:invalid:focus, input[type="time"]:focus:invalid:focus, input[type="week"]:focus:invalid:focus,
+input[type="number"]:focus:invalid:focus, input[type="email"]:focus:invalid:focus,
+input[type="url"]:focus:invalid:focus, input[type="search"]:focus:invalid:focus,
+input[type="tel"]:focus:invalid:focus, input[type="color"]:focus:invalid:focus,
+.uneditable-input:focus:invalid:focus
+{
+    border-color:   #E9322D;
+    box-shadow:     0px 0px 6px #F8B9B7;
+}
+
+select:focus:invalid:focus, textarea:focus:invalid,
+input[type="text"]:focus:invalid, input[type="password"]:focus:invalid,
+input[type="datetime"]:focus:invalid, input[type="datetime-local"], input[type="date"]:focus:invalid,
+input[type="month"]:focus:invalid, input[type="time"]:focus:invalid, input[type="week"]:focus:invalid,
+input[type="number"]:focus:invalid, input[type="email"]:focus:invalid,
+input[type="url"]:focus:invalid, input[type="search"]:focus:invalid,
+input[type="tel"]:focus:invalid, input[type="color"]:focus:invalid,
+.uneditable-input:focus:invalid
+{
+    color: #B94A48;
+}
+
+select:valid, textarea:valid,
+input[type="text"]:valid, input[type="password"]:valid,
+input[type="datetime"]:valid, input[type="datetime-local"], input[type="date"]:valid,
+input[type="month"]:valid, input[type="time"]:valid, input[type="week"]:valid,
+input[type="number"]:valid, input[type="email"]:valid,
+input[type="url"]:valid, input[type="search"]:valid,
+input[type="tel"]:valid, input[type="color"]:valid,
+.uneditable-input:valid,
+
+select:focus:valid:focus, textarea:focus:valid:focus,
+input[type="text"]:focus:valid:focus, input[type="password"]:focus:valid:focus,
+input[type="datetime"]:focus:valid:focus, input[type="datetime-local"], input[type="date"]:focus:valid:focus,
+input[type="month"]:focus:valid:focus, input[type="time"]:focus:valid:focus, input[type="week"]:focus:valid:focus,
+input[type="number"]:focus:valid:focus, input[type="email"]:focus:valid:focus,
+input[type="url"]:focus:valid:focus, input[type="search"]:focus:valid:focus,
+input[type="tel"]:focus:valid:focus, input[type="color"]:focus:valid:focus,
+.uneditable-input:focus:valid:focus
+{
+    border-color:   #93E346;
+    box-shadow:     0px 0px 6px #BEB090;
+}
+
+select:valid:hover, textarea:valid:hover,
+input[type="text"]:valid:hover, input[type="password"]:valid:hover,
+input[type="datetime"]:valid:hover, input[type="datetime-local"], input[type="date"]:valid:hover,
+input[type="month"]:valid:hover, input[type="time"]:valid:hover, input[type="week"]:valid:hover,
+input[type="number"]:valid:hover, input[type="email"]:valid:hover,
+input[type="url"]:valid:hover, input[type="search"]:valid:hover,
+input[type="tel"]:valid:hover, input[type="color"]:valid:hover,
+.uneditable-input:valid:hover,
+
+select:focus:valid:hover, textarea:focus:valid:hover,
+input[type="text"]:focus:valid:hover, input[type="password"]:focus:valid:hover,
+input[type="datetime"]:focus:valid:hover, input[type="datetime-local"], input[type="date"]:focus:valid:hover,
+input[type="month"]:focus:valid:hover, input[type="time"]:focus:valid:hover, input[type="week"]:focus:valid:hover,
+input[type="number"]:focus:valid:hover, input[type="email"]:focus:valid:hover,
+input[type="url"]:focus:valid:hover, input[type="search"]:focus:valid:hover,
+input[type="tel"]:focus:valid:hover, input[type="color"]:focus:valid:hover,
+.uneditable-input:focus:valid:hover
+{
+    border-color:   #228B22;
+    box-shadow:     0px 0px 6px #003600;
+}
+
+input[type=text],
+input[type=password],
+input[type=textarea]
+{
+    float:                  left;
+    //height:                 23px;
+    width:                  calc(100% - 15px);
+    //padding-left:           30px;
+    margin:                 0 auto;
+    border:                 1px solid whitesmoke;
+    border-radius:          4px;
+    -moz-border-radius:     4px;
+    -webkit-border-radius:  4px;
+    box-shadow:             1px 1px 2px #FFF68F;    
+    -moz-box-shadow:        1px 1px 2px #FFF68F;
+    -webkit-box-shadow:     1px 1px 2px #FFF68F;
+}
+
+input[type=button]
+{
+    color:                      #1C1C1C;
+    min-height:                 30px;
+    margin-top:                 5px;
+    padding:                    5px 10px 5px 10px;
+    text-decoration:            none;
+    text-shadow:                1px 1px 1px #708090;
+    cursor:			pointer;
+    border:			1px solid #CDC673;
+    -webkit-border-radius:      5;
+    -moz-border-radius:         5;
+    border-radius:              5px;
+    background-color:           #FFF68F;
+    background-image:           -webkit-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           -moz-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           -ms-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           -o-linear-gradient(top, #FFF68F, #CDC673);
+    background-image:           linear-gradient(to bottom, #FFF68F, #CDC673);
+    background-attachment:      scroll;
+}
+
+input[type=button].ComImagem 
+{
+    padding:                    5px 10px 5px 25px;
+}
+
+input[type=button]:hover
+{
+    border:             1px solid #CDC673;
+    background-color:   #a6a6a6;
+    background:         #EEE685;
+    background-image:   -webkit-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   -moz-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   -ms-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   -o-linear-gradient(top, #EEE685, #8B864E);
+    background-image:   linear-gradient(to bottom, #EEE685, #8B864E);
+}
+
+input[type=button]:active
+{
+    color:                  transparent;
+    background:             #EEE685;
+    background-image:       url("../imagens/carregando1616.gif"), -webkit-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), -moz-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), -ms-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), -o-linear-gradient(top, #EEE685, #8B864E);
+    background-image:       url("../imagens/carregando1616.gif"), linear-gradient(to bottom, #EEE685, #8B864E);
+    background-repeat:      no-repeat, repeat;
+    background-size:        16px 16px, cover;
+    background-position:    center, top left; 
+}
+
+.Erro
+{
+    color: #F00;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Código responsivo*/
+@media only screen /*Smartfones*/
+and (max-device-width: 320px)
+and (min-device-height: 480px)
+{
+
+}
+
+@media only screen /*Smartfones retrato*/
+and (max-device-width: 320px)
+and (min-device-height: 480px)
+and (orientation: portrait)
+{
+	
+}
+
+@media only screen /*Smartfones paisagem*/
+and (max-device-width: 480px)
+and (min-device-height: 320px)
+and (orientation: landscape)
+{
+
+}
+
+/*iPads (portrait e landscape)*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+{
+
+}
+ 
+/*iPads (landscape)*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+{
+
+}
+ 
+/*iPads (portrait)*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+{
+
+}
+ 
+/*Desktops e laptops*/
+@media only screen
+and (min-width: 1224px)
+{
+
+}
+
+/*Telas grandes*/
+@media only screen
+and (min-width: 1824px)
+{
+
+}
+ 
+/*iPhone 4*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5)
+{
+
+}
