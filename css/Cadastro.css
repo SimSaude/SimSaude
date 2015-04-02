@@ -1,0 +1,285 @@
+#Formulario
+{    /*Container Principal*/
+    position:           relative;
+    margin:             0 auto;
+    padding:            0 5px 0 5px;
+    height:             650px;
+    width:              calc(100% - 300px); /*500px*//*300px para celulares.*/
+    color:              #000;
+    //border:           1px solid #080808;
+    //background-color:	#FFF;
+}
+
+#Formulario h1
+{
+    font-family:        Old Standard TT, Myriad Pro, Arial, Helvetica, sans-serif;
+    font-size:          2em;
+    font-weight:        normal;
+    text-align:         center;
+    color:              #000
+}
+
+#Formulario p
+{
+    float:              left;
+    height:             18px;
+    margin:             0 auto;
+    color:              #FFF;
+    font-size:          12px;
+    text-align:         right;
+    text-shadow:        none;
+}
+
+.ContainerDeCampos
+{
+    float:              left;
+    position:           relative;
+    width:              calc(100% - 10px);
+    padding:            5px;
+    left:               30px;
+    //background-color:	#1E1E1E;
+   //  border:		1px solid #0E0E0E;
+  //  -moz-box-shadow:	0 0 20px #292929 inset;
+  //  -webkit-box-shadow:	0 0 20px #292929 inset;
+  //  box-shadow:         0 0 20px #292929 inset;
+}
+
+
+.ContainerDeBotoes
+{
+    float:              right;
+    position:           relative;
+    margin:             0 auto;
+    height:             40px;
+}
+
+.LinhaFormulario
+{
+    float:              left;
+    position:           relative;
+    padding:            2px 0 2px 0;
+    margin:             0 auto;
+    width:              100%;
+    height:             30px;
+    //background-color:   red;
+}
+
+.MeiaColuna
+{
+    float:              left;
+    position:           relative;
+    width:              50%;
+    //background-color:   red;
+}
+
+.ColunaInteira
+{
+    float:              left;
+    position:           relative;
+    width:              100%;
+    //background-color:   red;
+}
+
+.ColunaLabel
+{
+    float:              left;
+    position:           relative;
+    height:             25px;
+    width:              100px;
+    text-align:         right;
+    
+    //background-color:   #FEB;
+}
+
+.ColunaInput
+{
+    float:              left;
+    position:           relative;
+    margin-right:       3px;
+    width:              calc(100% - 140px); //140px;
+    height:             25px;
+    //background-color:   blue;
+}
+
+.ColunaInteira .ColunaInput
+{
+    width: calc(100% - 103px);
+}
+
+.ColunaInteira .ColunaInput input
+{
+    width: 50%;
+}
+
+#Formulario label
+{
+    height:             100%;
+    float:              right;
+    margin-right:       2px;
+    position:           relative;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:		12px;
+    color: #000;
+    width:              150px;
+    //font-weight:        bold;
+    //background-color:   #CA5;
+}
+
+label:not(#lbl_datadenascimento)
+{
+    letter-spacing:	0px;
+    margin-right:       5px;
+}
+
+input:not([type=button]),date,.Seletor
+{
+    float:                  left;
+    position:               relative; 
+    height:                 23px;
+    width:                  100%;
+    padding:                0;
+    margin-right:           3px;
+    border:                 1px solid white;
+    outline:                none; /* Preventing the default Safari and Chrome text box highlight */
+    color:                  #000;
+    border-color:           #008B45;   // Cor borda caixas
+    font-family:            Arial,Helvetica,sans-serif;
+    text-indent:            2.5px;
+}
+
+input:not([type=button]),date,.Seletor
+{
+    float:                  left;
+    position:               relative;
+    background:             url("../imagens/fundo_textbox.png") repeat-x scroll left top #FFFFFF;
+    //border-radius:          4px;
+    //-moz-border-radius:     4px;
+    //-webkit-border-radius:  4px;
+    //box-shadow:             1px 1px 2px #333333;    
+    //-moz-box-shadow:        1px 1px 2px #333333;
+    //-webkit-box-shadow:     1px 1px 2px #333333;
+}
+
+input:not([type=button]):hover,
+input:not([type=button]):focus,
+option:hover,
+option:focus,
+.Seletor:hover,
+.Seletor:focus
+{
+    /*-moz-box-shadow:    0 0 8px lightblue;
+    -webkit-box-shadow: 0 0 8px lightblue;
+    box-shadow:         0 0 8px lightblue;*/
+}
+
+input:not([type=button]):hover,
+option:hover
+{
+    background:         #DEF;
+}
+
+input:not([type=button]):focus,
+option:focus
+{
+    background: #ecffec;
+}
+
+input[type=button]:active
+{
+    color:                  transparent;
+    background-image:       url("../imagens/carregando1616.gif");
+    background-repeat:      no-repeat;
+    background-size:        16px 16px;
+    background-position:    center; 
+}
+
+.Botao
+{
+    float:          right;
+    padding-right:  2px;
+    margin:         0 auto;
+    text-align:     center;
+}
+
+#ContainerColunas
+{
+    background-color:       transparent;
+    border:                 0;
+    //-webkit-border-radius:  0;
+    //-moz-border-radius:     0;
+    //border-radius:          0;
+}
+
+#Formulario .Requerido 
+{
+    color: #FF4500;
+}
+
+#Formulario .Direita
+{
+    width: 100%;
+    float: right;
+}
+
+#StatusInferior
+{
+    float:              left;
+    position:           relative;
+    margin:             0 auto;
+    padding:            0;
+    width:              64.5%;
+    text-align:         left;
+}
+
+#StatusInferior p
+{
+    float:              left;
+    position:           relative;
+    margin:             0 auto;
+    padding:            0;
+}
+
+.Seletor
+{
+    width:          142px;
+    overflow:       hidden;
+    background:     url('../imagens/dropdown.png') no-repeat right, url("../imagens/fundo_textbox.png") repeat-x scroll left top #FFFFFF;
+    z-index:        100;
+    font-size:      12px;
+    text-shadow:    none;
+    letter-spacing: 0.2px;
+}
+
+.Seletor:hover, .Seletor:focus, .Seletor:active { background: url('../imagens/dropdown.png') no-repeat right, url("../imagens/fundo_textbox.png") repeat-x scroll left top #FFFFFF; }
+
+.SeletorPadrao { padding-left: 8px; }
+
+.Seletor select
+{
+    margin:     0px;
+    padding:    0px;
+    opacity:    0;
+    filter:     alpha(opacity = 0);
+    position:   absolute;
+    top:        0;
+    left:       0;
+    width:      100%;
+    height:     100%;
+    display:    block;
+    z-index:    101;
+}
+
+.Seletor select:focus
+{
+    outline: none;
+}
+
+#txt_numero
+{
+    width: 60px;
+}
+
+#txt_uf
+{
+    width: 22px;
+}

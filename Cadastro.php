@@ -8,8 +8,7 @@
 <html>
     <head>
         <?php require("includes/SecaoHead.php"); ?>
-        <script type="text/JavaScript" src="js/funcoes.js"></script>
-        <link rel="stylesheet" href="css/cadastro.css" type="text/css">
+        <link rel="stylesheet" href="css/Cadastro.css" type="text/css">
     </head>
     <body>
         <?php require("Cabecalho.php");?>
@@ -120,47 +119,47 @@
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_celular1" id="lbl_celular1">Celular 1</label></div>
-                                <div class="ColunaInput"><input id="txt_celular1" name="txt_celular1" type="text" aria-labelledby="lbl_residencial1" maxlength="10"/></div>
+                                <div class="ColunaInput"><input id="txt_celular1" name="txt_celular1" type="tel" aria-labelledby="lbl_residencial1" maxlength="10"/></div>
                             </div>
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_celular2" id="lbl_celular2">Celular 2</label></div>
-                                <div class="ColunaInput"><input id="txt_celular2" name="txt_celular2" type="text" aria-labelledby="lbl_residencial2" maxlength="10"/></div>
+                                <div class="ColunaInput"><input id="txt_celular2" name="txt_celular2" type="tel" aria-labelledby="lbl_residencial2" maxlength="10"/></div>
                             </div>
                         </div>
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_residencial1" id="lbl_residencial1">Residencial 1</label></div>
-                                <div class="ColunaInput"><input id="txt_residencial1" name="txt_residencial1" type="text" aria-labelledby="lbl_residencial1" maxlength="10"/></div>
+                                <div class="ColunaInput"><input id="txt_residencial1" name="txt_residencial1" type="tel" aria-labelledby="lbl_residencial1" maxlength="10"/></div>
                             </div>
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_residencial2" id="lbl_residencial2">Residencial 2</label></div>
-                                <div class="ColunaInput"><input id="txt_residencial2" name="txt_residencial2" type="text" aria-labelledby="lbl_residencial2" maxlength="10"/></div>
+                                <div class="ColunaInput"><input id="txt_residencial2" name="txt_residencial2" type="tel" aria-labelledby="lbl_residencial2" maxlength="10"/></div>
                             </div>
                         </div>
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_comercial1" id="lbl_comercial1">Comercial 1</label></div>
-                                <div class="ColunaInput"><input id="txt_comercial1" name="txt_comercial1" type="text" aria-labelledby="lbl_comercial1" maxlength="10"/></div>
+                                <div class="ColunaInput"><input id="txt_comercial1" name="txt_comercial1" type="tel" aria-labelledby="lbl_comercial1" maxlength="10"/></div>
                             </div>
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_ramal1" id="lbl_ramal1">Ramal 1</label></div>
-                                <div class="ColunaInput"><input id="txt_ramal1" name="txt_ramal1" type="text" aria-labelledby="lbl_ramal1" maxlength="6"/></div>
+                                <div class="ColunaInput"><input id="txt_ramal1" name="txt_ramal1" type="number" aria-labelledby="lbl_ramal1" maxlength="6"/></div>
                             </div>
                         </div>
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_comercial2" id="lbl_comercial2">Comercial 2</label></div>
-                                <div class="ColunaInput"><input id="txt_comercial2" name="txt_comercial2" type="text" aria-labelledby="lbl_comercial2" maxlength="10"/></div>
+                                <div class="ColunaInput"><input id="txt_comercial2" name="txt_comercial2" type="tel" aria-labelledby="lbl_comercial2" maxlength="10"/></div>
                             </div>
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_ramal2" id="lbl_ramal2">Ramal 2</label></div>
-                                <div class="ColunaInput"><input id="txt_ramal2" name="txt_ramal2" type="text" aria-labelledby="lbl_ramal2" maxlength="6"/></div>
+                                <div class="ColunaInput"><input id="txt_ramal2" name="txt_ramal2" type="tel" aria-labelledby="lbl_ramal2" maxlength="6"/></div>
                             </div>
                         </div>
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_nextel" id="lbl_nextel">Nextel</label></div>
-                                <div class="ColunaInput"><input id="txt_nextel" name="txt_nextel" type="text" aria-labelledby="lbl_nextel" maxlength="11"/></div>
+                                <div class="ColunaInput"><input id="txt_nextel" name="txt_nextel" type="tel" aria-labelledby="lbl_nextel" maxlength="11"/></div>
                             </div>
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_radioid" id="lbl_radioid">Rádio ID</label></div>
@@ -170,7 +169,7 @@
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_fax" id="lbl_fax">Fax</label></div>
-                                <div class="ColunaInput"><input id="txt_fax" name="txt_fax" type="text" aria-labelledby="lbl_fax" maxlength="10"/></div>
+                                <div class="ColunaInput"><input id="txt_fax" name="txt_fax" type="tel" aria-labelledby="lbl_fax" maxlength="10"/></div>
                             </div>
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_outro" id="lbl_outro">Outro</label></div>
