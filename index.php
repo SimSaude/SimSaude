@@ -7,7 +7,7 @@
 
     if (ChecarLogin($ConexaoSQL) == true)
     {
-        $Logado = "<a href='./Inicial.php' title='Entrar no Sistema' class='blink'>já está</a>";
+        $Logado = "<a href='./Inicial.php' title='Entrar no Sistema'>já está</a>";
     }
     else
     {
@@ -17,7 +17,7 @@
 <html lang="pt-br"> 
     <head>
         <?php require("includes/SecaoHead.php"); ?>
-        <link rel="stylesheet" href="css/Login.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="css/login.css" type="text/css" rel="stylesheet">
         <script type="text/JavaScript" src="js/sha512.js"></script>
         <script type="text/JavaScript" src="js/forms.js"></script>
     </head>
@@ -39,8 +39,8 @@
                                 <input type="password" name="Senha" id="Senha" maxlength="20" placeholder="Sua senha" required/>
                             </div>
                         </div>
-                    </div>
-                    <div ID="StatusInferior" class="Status blink"> 
+                    </div> <!-- ContainerDeCampos -->
+                    <div ID="StatusInferior" class="Status"> 
                         <?php
                         if (isset($_GET['Erro']))
                         {
@@ -60,7 +60,6 @@
                         }
                         ?>
                     </div>
-                    <script type="text/javascript">$("#Login, #Senha").keyup(function() { $('#StatusInferior').hide(); }); $("#Login, #Senha").change(function() { $('#StatusInferior').hide(); });</script>
                     <div class="ContainerDeBotoes">  
                         <div class="Botao">
                             <input type="button" value="Entrar" id="Entrar" class="ComImagem" title="Entrar no Sistema" onclick="<?php if (ChecarLogin($ConexaoSQL) == true){ echo "document.location.href='./Inicial.php'"; } else { echo "FormularioHash(this.form, this.form.Senha)"; }?>"/>

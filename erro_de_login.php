@@ -6,7 +6,7 @@
 <html>
     <head>
         <?php require("includes/SecaoHead.php"); ?>
-        <link rel="stylesheet" href="css/PaginaDeErro.css" type="text/css">
+        <link rel="stylesheet" href="css/paginadeerro.css" type="text/css">
     </head>
     <body>
         <h1>Ops</h1>

@@ -8,11 +8,6 @@
 <html>
     <head>
         <?php require("includes/SecaoHead.php"); ?>
-        <script>
-            $(function() {
-                $( "#datepicker" ).datepicker();
-            });
-        </script>
     </head>
     <body>
         <?php require("Cabecalho.php");?>
@@ -21,8 +16,8 @@
                 <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
                 <h3>Consultas</h3>
                 <p>
-                    <div id="datepicker"></div>
-                </p>
+                    Coluna 1.
+                </p>    
             </div>
             <div class="Colunas Coluna2_2">
                 <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>

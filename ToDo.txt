@@ -1,2 +1,0 @@
-Corrigir posicionamento do campo de pesquisa em resoluções meores.
-Mudar cor padrão para os botões.
