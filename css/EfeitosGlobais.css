@@ -1,0 +1,13 @@
+/*Efeitos Globais*/
+@keyframes marquee  {0% { top: 300px } 100% { top: -450px }}
+.marquee            {position: relative; animation: marquee 25s linear infinite; }
+.marquee:hover      {animation-play-state: paused; }
+@-webkit-keyframes  blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
+@-moz-keyframes     blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
+@keyframes          blinker { from {opacity: 1.0; color: red;} to {opacity: 0.0; color: black;}}
+.blink              { text-decoration: blink; animation: blinker 0.5s ease-in-out 0s infinite alternate; -moz-animation: blinker 0.5s ease-in-out 0s infinite alternate; -webkit-animation: blinker 0.5s ease-in-out 0s infinite alternate; }
+@-webkit-keyframes  pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@-moz-keyframes     pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@-o-keyframes       pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@-ms-keyframes      pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
+@keyframes          pulsar {0% {border-color: #AEB1E3; box-shadow: 0 0 5px #E0FFFF, inset 0 0 5px #E0FFFF } 100% {border-color: #E0FFFF; box-shadow: 0 0 20px #E0FFFF, inset 0 0 10px #E0FFFF; }}
