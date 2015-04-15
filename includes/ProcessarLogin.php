@@ -11,17 +11,16 @@
 
         if (Login($NomeUsuario, $HashSenha, $ConexaoSQL) == true)
         {
-            //Login com sucesso.
-            header('Location: ../Inicial.php');
+            //Verificar tipo de usuário.
+            header('Location: ../InicialNutricionista.php'); //Login com sucesso.
         }
         else
         {
-            //Falha de login.
-            header('Location: ../?Erro=1');
+            header('Location: ../?Erro=1'); //Falha de login.
         }
     }
     else
     {
         //As variáveis POST corretas não foram enviadas para esta página. 
-        echo "<!DOCTYPE html><html><head><meta charset='UTF-8'></head><body>Requisição Inválida.</body>";
+        echo "<!DOCTYPE html><html><head><meta charset='UTF-8'></head><body>Requisição Inválida.</body></html>";
     }

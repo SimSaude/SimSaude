@@ -8,14 +8,26 @@
 <html>
     <head>
         <?php require("includes/SecaoHead.php"); ?>
+        <script type="text/JavaScript" src="js/ValidarCPFeCNPJ.js"></script>
+        <script type="text/JavaScript" src="js/FuncoesCPFCNPJ.js"></script>
         <link rel="stylesheet" href="css/Cadastro.css" type="text/css">
+        <style>
+            .CPFouCNPJValido
+            {
+                    border: 1px solid green;
+            }
+            .CPFouCNPJInvalido
+            {
+                    border: 1px solid red;
+            }
+        </style>
     </head>
     <body>
         <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
             <?php if (empty($MensagemDeErro) == false) { echo $MensagemDeErro; } ?>
             <div id="Formulario">
-                <h1><b>Registre-se</b></h1>
+                <h1>Cadastro de Pacientes</h1>
                 <p class="Requerido Direita">* Campos Requeridos</p><br/>
                 <form action="<?php echo EscapeURL($_SERVER['PHP_SELF']); ?>" method="post" name="FormularioDeCadastro">
                    <div class="ContainerDeCampos">    
@@ -30,10 +42,8 @@
                                     <div class="Seletor">
                                         <span class="SeletorDefault"></span>
                                         <select id="cbo_tipodeusuario" name="cbo_tipodeusuario" class="CaixaDeSelecao"  aria-labelledby="lbl_tipodeusuario" title="Tipo de Usuário. Campo requerido.">
-                                            <option class="TextoDefault">-- Selecione --</option>
-                                            <option value="Paciente">Paciente</option>
-                                            <option value="Nutricionista">Nutricionista</option>
-                                            <option value="TecnicoExterno">Recepcionista</option>
+                                            <option class="TextoDefault" value="Paciente">Paciente</option>
+                                            <!--<option value="Paciente">Paciente</option>-->
                                         </select>
                                         <script type="text/javascript">CaixaDeSelecao($('.TextoDefault').text(), $('.SeletorDefault'), $('.CaixaDeSelecao'));</script>
                                     </div>
@@ -67,7 +77,7 @@
                         <div class="LinhaFormulario">
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_cpf" id="lbl_cpf"><span class="Requerido">*</span> CPF</label></div>
-                                <div class="ColunaInput"><input id="txt_cpf" name="txt_cpf" type="text" aria-labelledby="lbl_cpf" maxlength="11"/></div>
+                                <div class="ColunaInput"><input id="txt_cpf" class="CPFouCNPJ" name="txt_cpf" type="text" aria-labelledby="lbl_cpf" maxlength="11" required></div>
                             </div>
                             <div class="MeiaColuna">
                                 <div class="ColunaLabel"><label for="txt_rg" id="lbl_rg">RG</label></div>

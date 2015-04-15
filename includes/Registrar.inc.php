@@ -4,7 +4,7 @@
     
     $MensagemDeErro = "";
 
-    if (isset($_POST['Login'], $_POST['Email'], $_POST['TipoDeUsuario'], $_POST['Hash']))
+    if (isset($_POST['Login'], $_POST['Email'], $_POST['TipoDeUsuario'], $_POST['Hash']) === true)
     {
         //Limpa e valida os dados passados.
         $Login          = filter_input  (INPUT_POST , 'Login'           , FILTER_SANITIZE_STRING);
@@ -33,6 +33,12 @@
 
         if ($stmt) 
         {
+            /*
+                i 	corresponde a uma variável de tipo inteiro
+                d 	corresponde a uma variável de tipo double
+                s 	corresponde a uma variável de tipo string
+                b 	corresponde a uma variável que contém dados para um blob e enviará em pacotes
+             */
             $stmt->bind_param   ('s', $Email);
             $stmt->execute      ();
             $stmt->store_result ();
@@ -72,10 +78,11 @@
                         //Executar a tarefa pré-estabelecida.
                         if ($insert_stmt->execute() == false)
                         {
-                            header('Location: ../Erro.php?Erro=Falha ao inserir dados para o registro.');
+                            $_POST['Erro'] = "Falha ao inserir dados para o registro.";
+                            header('Location: ../Erro.php');
                         }
                     }
-                    header('Location: ./RegistradoComSucesso.php');
+                    header('Location: ./RegistradoComSucesso.php'); //Ou mensagem de ok.
                 } 
             } 
         }

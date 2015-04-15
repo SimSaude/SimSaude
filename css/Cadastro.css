@@ -135,7 +135,7 @@ input:not([type=button]),date,.Seletor
 {
     float:                  left;
     position:               relative; 
-    height:                 23px;
+    //height:                 23px;
     width:                  100%;
     padding:                0;
     margin-right:           3px;
