@@ -12,26 +12,12 @@
     <body>
         <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
-            <div class="Colunas Coluna1_3">
+            <div class="Colunas Coluna1_1">
                 <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
                 <h3>Clínica</h3>
                 <p>
-                    Coluna 1.
+                    Informações sobre a clínica.
                 </p>    
-            </div>
-            <div class="Colunas Coluna2_3">
-                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
-                <h3>Clínica</h3>
-                <p>
-                    Coluna 2.
-                </p>
-            </div>
-            <div class="Colunas Coluna3_3">
-                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
-                <h3>Clínica</h3>
-                <p>
-                    Coluna 3.
-                </p>
             </div>
         </section>
         <?php require("Rodape.php")?>

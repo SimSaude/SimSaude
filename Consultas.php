@@ -4,6 +4,9 @@
     require("includes/Funcoes.php");
     $Rastro = new RastroDeNavegacao();
     $Rastro->Adicionar("Consultas", EscapeURL(filter_var($_SERVER['PHP_SELF'], FILTER_SANITIZE_URL)), 1);
+    /*
+     * Verificar tipo de usuário com PHP aqui.
+     */
 ?>
 <html>
     <head>
@@ -16,22 +19,25 @@
     </head>
     <body>
         <?php require("Cabecalho.php");?>
-        <section id="ContainerColunas">
-            <div class="Colunas Coluna1_2">
+        <?php if ($_GET['u'] == 'a') { ?>
+            <!--Inicial Administrador-->
+        <?php } else if ($_GET['u'] == 'n') { ?>
+            <!--Consultas Nutricionista-->
+            <div class="Colunas Coluna1_1">
                 <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
                 <h3>Consultas</h3>
                 <p>
-                    <div id="datepicker"></div>
+                    Calendário de uma linha.<br/>
+                    Campo de pesquisa.<br/>
+                    Tabela com as consultas.<br/>
+                    Botão "realizar consulta".(?)<br/>
                 </p>
             </div>
-            <div class="Colunas Coluna2_2">
-                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
-                <h3>Consultas</h3>
-                <p>
-                    Coluna 2.
-                </p>
-            </div>
-        </section>
+        <?php } else if ($_GET['u'] == 'r') { ?>
+            <!--Consultas Recepcionista-->
+        <?php } else { ?>
+            <!--Consultas Paciente-->
+        <?php } ?>
         <?php require("Rodape.php")?>
     </body>
 </html>

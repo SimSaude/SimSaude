@@ -10,19 +10,9 @@
     min-height:         200px;
     max-height:         648px;
     overflow:           auto;
-    
-    /*-moz-box-shadow:        inset 0 0 400px 200px #EEE;
-    -webkit-box-shadow:     inset 0 0 400px 200px #EEE;
-    box-shadow:             inset 0 0 400px 200px #EEE;
-    -webkit-border-radius:  2px;
-    -moz-border-radius:     2px;
-    border-radius:          2px;*/
-    //border:                 1px solid #AAA;
     border-bottom:              1px solid #AAA;
     border-bottom-left-radius:  2px;
     border-bottom-left-radius:  2px;
-    
-    //background-color:       #F00;
 }
 
 /*Colunas Padrão*/
@@ -32,17 +22,8 @@
     position:               relative;
     min-width:              360px;
     margin-bottom:          30px;
-    
     text-align:             center;
     text-shadow:            none;
-    
-    /*-moz-box-shadow:        inset 0 0 400px 200px #CCC;
-    -webkit-box-shadow:     inset 0 0 400px 200px #CCC;
-    box-shadow:             inset 0 0 400px 200px #CCC;
-    -webkit-border-radius:  25px;
-    -moz-border-radius:     25px;
-    border-radius:          25px;*/
-    //border:                 1px solid #AAA;
 }
 
 #Colunas img
@@ -53,34 +34,29 @@
 .Coluna1_1
 {
     margin-top: 10px;
-    //width: 97.4%;
-    //margin-left: 1.2555555555%;
+    width: 100%;
 }
 
 .Coluna1_2, .Coluna2_2
 {
     margin-top: 10px;
-    width: 48.4%;
-    max-width: 920px;
-    
+    width: 50%;
 }
 
 .Coluna1_2
 {
-    margin-left: 1%;
+    float: left;
 }
 
 .Coluna2_2
 {
     float: right;
-    margin-right: 1%;
 }
 
 .Coluna1_3, .Coluna2_3, .Coluna3_3
 {
     margin-top: 10px;
-    //width: 31.57894736842105%;
-    //margin-left: calc(100% / 3 - 32.111111111%);
+    width: calc(100% / 3 - 0.1px);
 }
 
 /*Coluna da Esquerda Maior*/

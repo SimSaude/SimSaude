@@ -1,13 +1,12 @@
-
 <?php
-    /*
-        Após o login, determinar o tipo de usuário e o tipo de menu a exibir.
-    */
     if (eregi("MSIE", getenv("HTTP_USER_AGENT")) || eregi("Internet Explorer", getenv("HTTP_USER_AGENT")))
     {
         echo "<label class='Erro'>Navegador não compatível. Utilize um navegador moderno.</label>";
         exit;
     }
+    /*
+     * Verificar tipo de usuário com PHP aqui.
+     */
 ?>
 <header>
     <div id="Cabecalho">
@@ -27,7 +26,7 @@
             <div id="ContainerMenuSuperior">
                 <nav>
                     <ul class="MenuSuperior">
-                        <li id="MenuHome"><a href="./InicialNutricionista.php" class="Home" title="Inicial">.</a></li>
+                        <li id="MenuHome"><a href="./Inicial.php" class="Home" title="Inicial">.</a></li>
                         <!--Modificar-->
                         <!--Cabeçalho Administrador->
                         <li id="Menu"><a href="./Clinica.php" title="Cadastro de Usuários">Cadastro de Usuários</a></li>

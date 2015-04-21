@@ -16,14 +16,32 @@
     <body>
         <?php require("Cabecalho.php"); ?>
         <section id="ContainerColunas">
-            <div class="Colunas Coluna1_2">
-                <h3>Consultas do Mês</h3>
-                Janela ocupa a coluna inteira com o calendário estendido.
-            </div>
-            <div class="Colunas Coluna2_2">
-                <h3>Próximas Consultas</h3>
-                Várias janelas com os horários das próximas consultas.
-            </div>
+            <?php if ($_GET['u'] == 'a') { ?>
+                <!--Inicial Administrador-->
+            <?php } else if ($_GET['u'] == 'n') { ?>
+                <!--Inicial Nutricionista-->
+                <div class="Colunas Coluna1_2">
+                    <h3>Calendário</h3>
+                    Calendário estendido.
+                </div>
+                <div class="Colunas Coluna2_2">
+                    <h3>Tabela de Próximas Consultas</h3>
+                    Data da Consulta | Hora da Consulta | Nome Paciente | Link Cancelar Consulta
+                </div>
+            <?php } else if ($_GET['u'] == 'r') { ?>
+                <!--Inicial Recepcionista-->
+                <div class="Colunas Coluna1_2">
+                    <h3>Calendário</h3>
+                    Calendário estendido e interativo (ao clicar no dia, alterar a próxima coluna).
+                </div>
+                <div class="Colunas Coluna2_2">
+                    <h3>Tabela de Consultas para o Dia Selecionado</h3>
+                    Hora da Consulta | Nome Paciente | Nome Nutricionista | Link Cancelar Consulta<br/>
+                    Botão Agendar Consulta.
+                </div>
+            <?php } else { ?>
+                <!--Inicial Paciente-->
+            <?php } ?>
             <div id="dialog" title="Teste diálogo modal">Diálogo modal.<br/>AutoClose em 2.5 segundos.</div>
         </section>
         <?php require("Rodape.php")?>
