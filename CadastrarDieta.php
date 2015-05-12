@@ -11,7 +11,7 @@
     </head>
     <body>
         <?php require("Cabecalho.php");?>
-        <!--Pacientes Nutricionista-->
+        <!--Nutricionista-->
         <section id="ContainerColunas">
             <div class="Colunas Coluna1_3">
                 <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>

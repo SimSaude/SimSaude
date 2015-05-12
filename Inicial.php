@@ -18,6 +18,14 @@
         <section id="ContainerColunas">
             <?php if ($_GET['u'] == 'a') { ?>
                 <!--Inicial Administrador-->
+                <div class="Colunas Coluna1_2">
+                    <h3>Gráfico</h3>
+                    Pacientes atendidos na clínica.
+                </div>
+                <div class="Colunas Coluna2_2">
+                    <h3>Gráfico</h3>
+                    Pacientes atendidos por medico.
+                </div>
             <?php } else if ($_GET['u'] == 'n') { ?>
                 <!--Inicial Nutricionista-->
                 <div class="Colunas Coluna1_2">
@@ -41,6 +49,18 @@
                 </div>
             <?php } else { ?>
                 <!--Inicial Paciente-->
+                <div class="Colunas Coluna1_3">
+                    <h3>Propaganda</h3>
+                    Propaganda estendida verticalmente.
+                </div>
+                <div class="Colunas Coluna2_3">
+                    <h3>Histórico de Consultas</h3>
+                    Tabela com o histórico de consultas. <br/>
+                    Data | Hora | Local | Nutricionista | Status
+                </div>
+                <div class="Colunas Coluna3_3">
+                    <h3>Resumo da dieta mais recente</h3>
+                </div>
             <?php } ?>
             <div id="dialog" title="Teste diálogo modal">Diálogo modal.<br/>AutoClose em 2.5 segundos.</div>
         </section>

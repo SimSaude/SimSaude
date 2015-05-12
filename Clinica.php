@@ -12,13 +12,21 @@
     <body>
         <?php require("Cabecalho.php");?>
         <section id="ContainerColunas">
-            <div class="Colunas Coluna1_1">
-                <figure><img src="imagens/titulosemlogo.png" width="200px" height="10px" alt="Novo Conteúdo"></figure>
-                <h3>Clínica</h3>
-                <p>
-                    Informações sobre a clínica.
-                </p>    
-            </div>
+            <?php if ($_GET['u'] == 'a') { ?>
+                <!--Clínica Administrador-->
+                <div class="Colunas Coluna1_1">
+                    <h3>Informações da Clínica</h3>
+                    Campos editáveis.
+                </div>
+            <?php } else { ?>
+                <!--Clínica Nutricionista-->
+                <!--Clínica Recepcionista-->
+                <!--Clínica Paciente-->
+                <div class="Colunas Coluna1_1">
+                    <h3>Informações da Clínica</h3>
+                    Visualizar informações da clínica.
+                </div>
+            <?php } ?>
         </section>
         <?php require("Rodape.php")?>
     </body>
